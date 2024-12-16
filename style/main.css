@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* color variables */
+:root {
+    --primaryColor: #181C28;
+    --secondaryColor : #283354;
+    --textColor : #FFFFFF;
+    --innerColor: #1A1A1A;
+    --buttonColor : #1E90FF;
+    --buttonhover: #0C75E3;
+    --importantinfo: #FFA500;
+}
+
+/* CSS Resest */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*  Universal Style */
+body {
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    height: 100%;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6  {
+    font-family: "Poppins", serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(24, 28, 40,0.5); */
+    background-color: #0C75E3;
+    padding: 1rem;
+}
+
+/* Logo Design */
+.logo {
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.logo::before {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 20%;
+    background-color: var(--buttonColor);
+    position: absolute;
+        top: 100%;
+        left: 0;
+    border-radius:  .1rem 0 ;
+    z-index: 2;
+}
+
+/* Hambuger menu */
+.menu-btn-cont {
+    margin-left: auto;
+    cursor: pointer;
+    padding: 1rem .3rem;
+    border-radius: .3rem;
+}
+
+.menu-btn,.menu-btn::after,.menu-btn::before {
+    width: 2rem;
+    height: .23rem;
+    background-color: var(--textColor);
+    border-radius: .1rem;
+    position: relative;
+    transition: all .2s linear;
+}
+
+
+.menu-btn::after,.menu-btn::before {
+    display: block;
+    content: "";
+    position: absolute;
+}
+.menu-btn::after {
+    top: -250%;
+}
+.menu-btn::before {
+    top: 250%;
+}
+
+.menu-btn-cont.active .menu-btn::after {
+    transform: rotate(35deg) translate(3px,8px);
+    width: 2.1rem;
+}
+.menu-btn-cont.active .menu-btn {
+    background-color: rgb(255, 255, 255,0);
+}
+.menu-btn-cont.active .menu-btn::before {
+    transform: rotate(-35deg) translate(4px,-10px);
+    width: 2.1rem;
+}
+
+
+/* Theme Switch */
+.theme-switch {
+    margin-left: 3rem;
+    background-color: var(--textColor);
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 1px 1px .5rem  rgba(0,0,0,0.8), inset -1px -1px .5rem rgba(0,0,0,0.8);
+    position: relative;
+    transition: all 0.3s linear;
+    margin-left: 2rem;
+    display: none;
+}
+
+.theme-dark-icon,.theme-light-icon {
+    fill: black;
+    transition: all 0.3s linear;
+}
+
+.theme-switch::before {
+    content: "";
+    background-color: var(--buttonhover);
+    width: 50%;
+    height: 90%;
+    position: absolute;
+        left: .1rem;
+    border-radius: 2rem;
+    opacity: 0.5;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0,0.2), -2px -2px 5px rgb(0, 0, 0,0.2);
+    transition: all 0.3s linear;
+}
+
+.theme-switch.active {
+    background-color: var(--primaryColor);
+}
+
+.theme-switch.active .theme-light-icon {
+    fill: var(--textColor);
+}
+
+.theme-switch.active .theme-dark-icon {
+    fill: var(--textColor);
+}
+
+.theme-switch.active::before {
+    left: 48%;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255,0.2), -2px -2px 5px rgb(255, 255, 255,0.2);
+}
+
+/* Main navbar */
+.main_navbar {
+    color: var(--textColor);
+    margin-left: auto;
+    display: none;
+}
+.main_navbar li {
+    display: inline;
+    color: var(--textColor);
+    list-style-type: none;
+}
+
+.main_navbar li a {
+    color: var(--textColor);
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 .4rem;
+    transition: color 0.2s linear;
+}
+
+.main_navbar li a:hover {
+    color: var(--buttonhover);
+}
+
+
+
+
+
+
+

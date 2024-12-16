@@ -1,0 +1,41 @@
+﻿Background color: #181C28
+text color #FFFFFF
+button color #1E90FF
+div #283354
+
+
+
+Font: Poppins for headings and Roboto or Inter for body
+Root {
+--primary:#F9F9F9;
+            --card : #FFFFFF;
+            --text: #1A1A1A;
+            --button : #1E90FF;
+            --buttonhover: #0C75E3;
+            --btntext:#FFFFFF;
+            --importantinfo: #FFA500; 
+}
+
+Bulus Hamnu - Web developer 
+
+Hi, I'm Bulus Hamnu, a passionate web developer skilled in creating intuitive, user-friendly websites and applications. With expertise in HTML, CSS, JavaScript, and modern frameworks, I focus on delivering responsive and seamless user experiences. Feel free to reach out if you'd like to discuss potential collaborations or opportunities.
+
+Skills:
+As a passionate web developer, I specialize in creating dynamic, user-friendly websites and applications. With a strong foundation on most of the tools, frameworks and basic web design, I am continuously expanding my skill set and knowledge of modern web technologies.
+
+Interests: "Outside coding, I enjoy making music and watching anime."
+
+Goals: "I aim to contribute to the global tech industry and become an influential developer."
+
+Passion:
+"My passion lies in blending programming and creativity to build impactful solutions. Whether through developing software, designing intuitive websites, or exploring music production, I aim to use technology to innovate and inspire."
+
+
+Date on blogs
+Socials on footer
+
+
+
+my journey into programming started at the age of 13, driven by my deep interest in robotics. While I’m not currently involved in robotics, it laid the foundation for my programming skills. I am passionate about technology and its potential to change the world.
+
+
