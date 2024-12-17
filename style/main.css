@@ -39,7 +39,8 @@ h1,h2,h3,h4,h5,h6  {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 header {
@@ -47,9 +48,12 @@ header {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(24, 28, 40,0.5); */
-    background-color: #0C75E3;
+    background-color: rgba(24, 28, 40,0.8);
     padding: 1rem;
+    position: fixed;
+        top: 0;
+        width: 100%;
+    z-index: 10;
 }
 
 /* Logo Design */
@@ -196,8 +200,361 @@ header {
 }
 
 
+/* Hero section */
+.hero-section {
+    margin-top: 5rem;
+    min-width: 100%;
+    text-align: center;
+    padding: .2rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.intro-graph,p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: .6rem;
+    margin-top: 1.1rem;
+    text-align: justify;
+}
+
+.call-to-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2.8rem;
+}
+
+.resume-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: var(--buttonColor);
+    color: var(--textColor);
+    padding: .7rem .2rem;
+    width: 7rem;
+    border-radius: .3rem;
+}
+
+.button-transparent {
+    background-color: var(--innerColor);
+    color: var(--textColor);
+    padding: .6rem .2rem;
+    width: 7rem;
+    border-radius: .3rem;
+    border: .1rem solid var(--buttonColor);
+    box-shadow: .1rem .1rem .4rem var(--buttonColor);
+}
+.button-transparent svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.button:hover {
+    background-color: var(--buttonhover);
+}
+
+.button-transparent:hover {
+    background-color: var(--buttonhover);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    margin: 3rem;
+    list-style-type: none;
+}
+
+.social-link {
+    color: var(--textColor);
+    font-size: 1.8rem;
+}
+
+/* Skills section */
+.skills-section {
+    text-align: center;
+    background-color: var(--secondaryColor);
+    box-shadow: .1rem .1rem .7rem black;
+    margin: .3rem;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin-top: 1rem;
+    padding-top: 1.3rem;
+}
+.skills-list {
+    padding: .1rem .2rem;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: .1rem solid red; */
+    gap: 1rem;
+}
+.slider .skills {
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    margin: .3rem;
+    background-color: var(--innerColor);
+}
+
+/* fake */
+img {
+    width: 100%;
+}
+h4 {
+    font-size: 1.2rem;
+}
+
+.slider .skills img {
+    width: 2.5rem;
+    margin: .3rem;
+}
+
+.slider .skills p {
+    font-size: .8rem;
+    margin: .4rem;
+}
+
+/* Projects section */
+.projects-section {
+    text-align: center;
+    margin: 5rem auto;
+}
+.project-list {
+    margin: 1rem .2rem;
+}
+
+.project-card {
+    border: .2rem solid var(--textColor);
+    background-color: var(--primaryColor);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: 0 .2rem;
+}
+.project-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .3rem;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+.project-tags .tags {
+    font-size: .85rem;
+    padding: .5rem 1rem;
+    background-color: var(--innerColor);
+    border-radius: .3rem;
+}
+.project-cover img {
+    width: 100%;
+}
+.project-title {
+    margin: .6rem 0;
+}
+.project-description {
+    margin-top: .2rem;
+}
+.project-actions-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.3rem;
+}
+
+.view-all-projects {
+    margin-top: 1rem;
+    display: block;
+    margin-left: 1.4rem;
+}
+
+
+
+/* About me section */
+.about-me {
+    text-align: center;
+    margin: 4rem auto;
+    padding: .2rem;
+}
+.about-me-tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.about-me h4 {
+    margin-left: .6rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-size: 1.3;
+}
+.myself p{
+    margin-top: 0;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem auto;
+}
+.tabs .tab-button {
+    background-color: var(--innerColor);
+    color: var(--textColor);
+    padding: .6rem .2rem;
+    width: 6rem;
+    border: .1rem solid var(--buttonColor);
+    box-shadow: .1rem .1rem .4rem var(--buttonColor);
+}
+.about-me-tab {
+    text-align: left;
+}
+
+
+/* Contact section */
+.contact-me {
+    text-align: center;
+    margin-top: 3rem;
+}
+.contact-form {
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid var(--textColor);
+    margin: 2rem .5rem;
+    border-radius: .5rem;
+    padding: 1rem 0;
+}
+.contact-form .form-group {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+}
+.contact-form .form-group input[type="text"],input[type="email"],textarea {
+    width: 100%;
+    margin-top: .5rem;
+    outline: none;
+    font-size: 1rem;
+    padding: .3rem;
+}
+
+.contact-form .form-group input[type="text"],input[type="email"] {
+    height: 2.5rem;
+}
+.contact-form .form-group label {
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+}
+.contact-form .form-group textarea {
+    height: 13rem;
+    resize: vertical;
+}
+
+.contact-form  button {
+    margin-top: .8rem;
+    align-self: flex-start;
+    margin-left: 1.05rem;
+    border: none;
+}
+.contact-links  {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.contact-links div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+.contact-links a {
+    color: var(--textColor);
+}
+
+
+/* Blog section */
+
+.blog-section {
+    text-align: center;
+    margin: 4rem auto;
+}
+.blog-list {
+    text-align: center;
+    margin: .4rem;
+    margin-top: 1.1rem;
+}
+.blog-list .blog {
+    padding: .5rem;
+    margin-bottom: .4rem;
+    border: .1rem solid var(--textColor);
+}
+.blog-list .blog h4{
+    margin-top: .6rem;
+}
+.blog-list .blog p{
+    margin-top: 0;
+}
+.blog-date {
+    font-weight: 600;
+}
+.blog-list .blog .button{
+    margin: 1rem;
+    display: block;
+}
+.blog-section .button{
+    margin: 1rem ;
+    display: block;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--secondaryColor);
+    text-align: center;
+    padding: 1rem;
+    color: var(--textColor);
+    margin-top: 7rem;
+    box-shadow: .1rem .1rem .7rem black;
+    margin-bottom: 5rem;
+}
 
 
 
 
 
+
+@media screen  and (min-width:1024px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: .8rem;
+    }
+    .about-me-tab {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 30rem));
+        gap: .5rem;
+        justify-content: center;
+    }
+}
