@@ -12,6 +12,7 @@ const switchEffect = document.querySelector(".switch-effect")
 const contactForm = document.querySelector(".form-js");
 const closeModal = document.querySelector(".close-modal");
 const contactModal = document.querySelector(".contact-modal");
+const tabButtons = document.querySelectorAll(".tab-button");
 
 
 
@@ -37,6 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 toogle.classList.remove("active");
             });
         }
+
+
+        document.querySelector(".about-me-tab").classList.toggle("active"); //display my about tab
 });
 
 
@@ -148,6 +152,27 @@ contactForm.addEventListener("submit", (event) => {
 
 closeModal.addEventListener("click", function () {
     contactModal.style.display = "none";
+});
+
+
+/* About me tab function */
+tabButtons.forEach( tab => {
+
+    tab.addEventListener("click", function () {
+        tabButtons.forEach( tab => tab.classList.remove("active"));
+        tab.classList.add("active");
+
+        const content = document.querySelector(`.${tab.dataset.tabname}`);
+        content.parentNode.querySelectorAll(".tab-content").forEach( content => content.classList.remove("active"))
+        content.classList.add("active");
+
+        console.log(content.parentNode.querySelectorAll(".tab-content"));
+        
+        
+
+
+    });
+
 });
 
 

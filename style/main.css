@@ -516,10 +516,13 @@ h4 {
     padding: .2rem;
 }
 .about-me-tab {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     gap: .5rem;
     justify-content: center;
+}
+.about-me-tab.active {
+    display: grid;
 }
 
 .about-me h4 {
@@ -557,6 +560,44 @@ h4 {
 .about-me-tab {
     text-align: left;
 }
+
+.education-tab,.experiences-tab  {
+    margin: 1rem;
+    grid-template-columns: 1fr ;
+    gap: .7rem;
+    display: none;
+}
+
+
+.experiences-tab.active {
+    display: grid;
+}
+.education-tab.active {
+    display: grid;
+}
+
+.education-tab .type,.experiences-tab .type {
+    background-color: var(--primaryColor);
+    text-align: center;
+    padding: 2rem;
+    border: .1rem solid var(--textColor);
+    border-radius: .5rem;
+}
+.education-tab .type p,.experiences-tab .type p {
+    text-align: center;
+}
+.education-tab .type span,.experiences-tab .type span {
+    background-color: var(--buttonhover);
+    width: .5rem;
+    display: inline-block;
+    height: .5rem;
+    padding: .3rem;
+    border-radius: 100%;
+    margin: 0 .2rem 0 0;
+}
+
+
+
 
 
 /* Contact section */
@@ -729,10 +770,13 @@ footer {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --primaryColor: #f8f9fa;
-        --secondaryColor: #e9ecef;
-        --textColor: #212529;
-        --buttonColor: #007bff;
+        --primaryColor: #f7f7f7;       
+        --secondaryColor: #d1d6e0;     
+        --textColor: #1A1A1A;          
+        --innerColor: #ffffff;         
+        --innerColorLite: #e5e5e5;     
+        --buttonColor: #0078d7;        
+        --buttonhover: #005a9e;
     }
 }
 
@@ -745,7 +789,7 @@ footer {
         gap: .8rem;
     }
     .about-me-tab {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: repeat(2, minmax(0, 30rem));
         gap: .5rem;
         justify-content: center;
@@ -760,6 +804,9 @@ footer {
     .theme-switch {
         display: flex;
     }
+    .education-tab {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen  and (min-width:1024px){
@@ -769,7 +816,7 @@ footer {
         gap: .8rem;
     }
     .about-me-tab {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: repeat(2, minmax(0, 30rem));
         gap: .5rem;
         justify-content: center;
