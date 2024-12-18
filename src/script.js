@@ -6,6 +6,9 @@ const sideNavBar = document.querySelector(".side-navBar");
 const overLay = document.querySelector(".over-lay")
 const body = document.querySelector("body");
 const header = document.querySelector("header");
+const slider = document.querySelector(".slider")
+const sliderCont = document.querySelector(".skills-list")
+const switchEffect = document.querySelector(".switch-effect")
 
 
 /* init theme */
@@ -43,6 +46,12 @@ menuBtn.addEventListener("click", function () {
 themeSwitch.forEach( toogle => {
     toogle.addEventListener("click", function () {
         
+        if (switchEffect.play == true) {
+            switchEffect.currentTime = 0;
+        } 
+        switchEffect.play()
+
+
         body.classList.toggle("theme-light");
         toogle.classList.toggle("active");
 
@@ -64,7 +73,7 @@ overLay.addEventListener("click", function () {
 });
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
         header.style.borderBottom = "2px solid var(--textColor)";
     } else {
         header.style.borderBottom = "none";
@@ -74,5 +83,21 @@ window.addEventListener("scroll", function () {
 
 
 
+/* NOdeClone and animation  handliong of skills section */
+let slider2 = slider.cloneNode(true);
+slider2.style.animation = ("auto-play 15s linear infinite");
+sliderCont.appendChild(slider2)
 
 
+const skills = document.querySelectorAll('.skills');
+const sliders = document.querySelectorAll('.slider');
+
+skills.forEach(skill => {
+    skill.addEventListener('mouseenter', () => {
+        sliders.forEach(s => s.classList.add('paused')); 
+    });
+
+    skill.addEventListener('mouseleave', () => {
+        sliders.forEach(s => s.classList.remove('paused'));
+    });
+});

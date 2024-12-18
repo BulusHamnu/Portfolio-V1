@@ -246,7 +246,7 @@ header.active {
 .side-navBar {
     background-color: var(--primaryColor);
     position: fixed;
-        top: 60px;
+        top: 58px;
         right: -100%;
     width: 70%;
     height: 100vh;
@@ -389,12 +389,35 @@ h2 {
 .skills-list {
     padding: .1rem .2rem;
     overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    mask: linear-gradient(to right,transparent,black 7%,black 88%,transparent);
 }
+
+
 .slider {
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    animation: auto-play 15s linear infinite;
 }
+
+.slider.paused {
+    animation-play-state: paused !important ;
+}
+
+
+@keyframes auto-play {
+    to {
+        transform: translateX(-100%);
+    }
+    from {
+        transform: translateX(0%);
+    }
+}
+
 .slider .skills {
     padding: .5rem 1.5rem;
     border-radius: .5rem;
@@ -403,9 +426,14 @@ h2 {
     cursor: pointer;
     transition: background-color 0.2s linear;
 }
+.slider .skills p {
+    white-space: nowrap;
+}
 .slider .skills:hover {
     background-color: var(--innerColorLite);
+    transform: scale(1.1);
 }
+
 
 /* all images and h4 */
 img {
