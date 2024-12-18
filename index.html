@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="style/main.css">
 </head>
-<body>
+<body >
     <div class="container">
 
         <!-- Header -->
@@ -27,12 +27,30 @@
                 <li><a href="#contact_me">contact me</a></li>
                 <li><a href="#blogs">blogs</a></li>
             </nav>
-            <div class="theme-switch active">
+            
+            <aside class="side-navBar">
+                <nav >
+                    <ul>
+                        <li><a href="#skills">skills</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact_me">contact me</a></li>
+                        <li><a href="#blogs">blogs</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-switch">
+                    <svg class="theme-light-icon " xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q67 0 113.5-46.5T640-480q0-67-46.5-113.5T480-640q-67 0-113.5 46.5T320-480q0 67 46.5 113.5T480-320Zm0-160Z"/></svg>
+                    <svg class="theme-dark-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+                </div>
+            </aside>
+            <div class="theme-switch ">
                 <svg class="theme-light-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q67 0 113.5-46.5T640-480q0-67-46.5-113.5T480-640q-67 0-113.5 46.5T320-480q0 67 46.5 113.5T480-320Zm0-160Z"/></svg>
                 <svg class="theme-dark-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
             </div>
-            <div class="menu-btn-cont "><div class="menu-btn"></div></div>
+            <div class="menu-btn-cont"><div class="menu-btn"></div></div>
         </header>
+        <!-- OverLay for menu -->
+        <div class="over-lay"></div>
 
         <!-- Main Content -->
          <main>
@@ -42,13 +60,13 @@
                 <p class="intro-graph">Hi, I'm Bulus Hamnu, a passionate web developer skilled in creating intuitive, user-friendly websites and applications. With expertise in HTML, CSS, JavaScript, and modern frameworks, I focus on delivering responsive and seamless user experiences. Feel free to reach out if you'd like to discuss potential collaborations or opportunities.</p>
                 <div class="call-to-actions">
                     <a href="#" class="button">contact me</a>
-                    <a href="#" class="button-transparent resume-btn">resume <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
+                    <a href="#" class="button-transparent resume-btn">resume <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
                 </div>
                 <ul class="social-links">
-                    <li><a href="#"><i class="fa-brands fa-github social-link"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter  social-link" ></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin social-link"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube social-link" ></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github social-link svg-icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter  social-link svg-icon" ></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin social-link svg-icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube social-link svg-icon" ></i></a></li>
                 </ul>
             </section>
 
@@ -111,23 +129,7 @@
              <section class="projects-section" id="projects">
                 <h2>Projects</h2>
                 <div class="project-list grid-container">
-                    <div class="project-card">
-                        <div class="project-cover"><img src="/Asserts/Icons/DEMYSTUDIO.png" alt=""></div>
-                        <h3 class="project-title">Responsive website dummy</h3>
-                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quo molestiae culpa doloribus illum natus veritatis hic porro.</p>
-                        <div class="project-tags">
-                            <label class="tags">HTML</label>
-                            <label class="tags">CSS</label>
-                            <label class="tags">JavaScript</label>
-                            <label class="tags">Python</label>
-                        </div>
-
-                        <div class="project-actions-btn">
-                            <a href="#" class="button">Demo</a>
-                        <a href="#" class="button-transparent">View Code</a>
-                        </div>
-                        
-                    </div>
+                    
                     <div class="project-card">
                         <div class="project-cover"><img src="/Asserts/Icons/DEMYSTUDIO.png" alt=""></div>
                         <h3 class="project-title">Responsive website dummy</h3>
@@ -188,7 +190,7 @@
              <section class="about-me" id="about">
                 <h2>About Me</h2>
                 <div class="tabs">
-                    <button class="tab-button">About Me</button>
+                    <button class="tab-button active">About Me</button>
                     <button class="tab-button">Education</button>
                     <button class="tab-button">Experiences</button>
                 </div>
@@ -196,11 +198,11 @@
                 <div class="about-me-tab">
                     <div class="myself">
                         <p>my journey into programming started at the age of 13, driven by my deep interest in robotics. While I’m not currently involved in robotics, it laid the foundation for my programming skills. I am passionate about technology and its potential to change the world.</p>
-                        <h4>Interest</h4>
+                        <h4>Interest &#128161;</h4>
                         <p>Outside coding, I enjoy making music and watching anime.</p>
-                        <h4>Passion</h4>
+                        <h4>Passion &#128293;</h4>
                         <p>My passion lies in blending programming and creativity to build impactful solutions. Whether through developing software, designing intuitive websites, or exploring music production, I aim to use technology to innovate and inspire.</p>
-                        <h4>Goals</h4>
+                        <h4>Goals &#127919;</h4>
                         <p>I aim to contribute to the global tech industry and become an influential developer.</p>
                     </div>
                     <figure class="avatar"><img src="Asserts/Icons/avatar.jpg" alt="My Photo"></figure>
@@ -227,11 +229,11 @@
                 </form>
 
                 <div class="contact-links">
-                <div class="email"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><a href="">hamnubulus@gmail.com</a></div>
-                <div class="phone"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="">+234 9068 556 962</a></div>
-                <div class="discord"><i class="fa-brands fa-discord"></i>
+                <div class="email"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><a href="">hamnubulus@gmail.com</a></div>
+                <div class="phone"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="">+234 9068 556 962</a></div>
+                <div class="discord"><i class="fa-brands fa-discord "></i>
                     <a href="">Discord</a></div>
-                <div class="address"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><a href="">Yelwan lebura bauchi, Nigeria.</a></div>
+                <div class="address"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><a href="">Yelwan lebura bauchi, Nigeria.</a></div>
                 </div>
              </section>
 
@@ -239,18 +241,19 @@
              <section class="blog-section" id="blogs">
                 <h2>Latest Blogs</h2>
                 <div class="blog-list">
-                    <article class="blog">
-                        <h4 class="blog-title">How to design a hero section in figma.</h4>
+                    <article class="blog" >
+                        <a href="#"><h4 class="blog-title">How to design a hero section in figma.</h4></a>
                         <p class="blog-date">Jan 22,2024</p>
                         <p class="blog-content-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?</p>
                         <a href="#" class="button">Read More..</a>
                     </article>
-                    <article class="blog">
-                        <h4 class="blog-title">How to design a hero section in figma.</h4>
+                    <article class="blog" >
+                        <a href="#"><h4 class="blog-title">How to design a hero section in figma.</h4></a>
                         <p class="blog-date">Jan 22,2024</p>
                         <p class="blog-content-preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?</p>
                         <a href="#" class="button">Read More..</a>
                     </article>
+                    
                 </div>
                 <a href="#" class="button">View All</a>
              </section>
@@ -272,6 +275,6 @@
     </div>
 
 
-    <script src="src/main.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
