@@ -9,6 +9,11 @@ const header = document.querySelector("header");
 const slider = document.querySelector(".slider")
 const sliderCont = document.querySelector(".skills-list")
 const switchEffect = document.querySelector(".switch-effect")
+const contactForm = document.querySelector(".form-js");
+const closeModal = document.querySelector(".close-modal");
+const contactModal = document.querySelector(".contact-modal");
+
+
 
 
 /* init theme */
@@ -101,3 +106,52 @@ skills.forEach(skill => {
         sliders.forEach(s => s.classList.remove('paused'));
     });
 });
+
+
+
+/* Form Handling */
+contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    
+
+    let data = new FormData(event.target);
+
+    fetch(event.target.action, {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json'
+        },
+        body: data
+    })
+        .then(response => {
+            if (response.ok) { 
+                
+                contactModal.querySelector("h4").innerText = "Message sent!";
+                contactModal.querySelector("p").innerText = "Thank you for reaching out! I'll get back to you shortly.";
+                contactModal.style.display = "block";
+
+            } else {
+
+                contactModal.querySelector("h4").innerText = "Message failed to send!";
+                contactModal.querySelector("p").innerText = "It seems like there was a problem with the server. Please try again later.";
+                contactModal.style.display = "block";
+            }
+
+            contactForm.reset()
+        } )
+        .catch(error => {
+            console.error("Network error:", error);
+        });
+
+
+});
+
+closeModal.addEventListener("click", function () {
+    contactModal.style.display = "none";
+});
+
+
+
+
+
+
