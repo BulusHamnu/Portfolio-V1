@@ -6,14 +6,21 @@
 }
 a {
     color: var(--textColor);
+}
+
+a {
+    color: var(--textColor);
+}
+h3 a {
     text-decoration: underline;
 }
 
-.blog-title {
+.title {
     margin-bottom: .5rem;
+    margin-left: 0rem;
 }
 
-.blog-date {
+.date {
     font-size:1rem;
     color: var(--textColor);
     margin-bottom: 2rem;

@@ -84,12 +84,8 @@ tabButtons.forEach( tab => {
         const content = document.querySelector(`.${tab.dataset.tabname}`);
         content.parentNode.querySelectorAll(".tab-content").forEach( content => content.classList.remove("active"))
         content.classList.add("active");
-
-        console.log(content.parentNode.querySelectorAll(".tab-content"));
         
         
-
-
     });
 
 });

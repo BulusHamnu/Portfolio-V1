@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let theme = localStorage.getItem("demySiteTheme");
     
         if (theme === "light") {
-            console.log("theme is ",theme);
+            
             body.classList.add("theme-light");
 
             themeSwitch.forEach(toogle => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
             
         } else if (theme === "dark") {
-            console.log("theme is ".theme);
+            
 
             body.classList.remove("theme-light");
 

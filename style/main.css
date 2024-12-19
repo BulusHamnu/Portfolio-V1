@@ -69,7 +69,6 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -565,10 +564,13 @@ h2 {
     text-align: left;
 }
 
-.education-tab,.experiences-tab  {
-    margin: 1rem;
+.tab-grid {
     grid-template-columns: 1fr ;
     gap: .7rem;
+}
+
+.education-tab,.experiences-tab  {
+    margin: 1rem;
     display: none;
 }
 
@@ -620,6 +622,11 @@ h2 {
     margin: 2rem .5rem;
     border-radius: .5rem;
     padding: 1rem 0;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: .5rem;
 }
 .contact-form .form-group {
     display: flex;
@@ -783,10 +790,48 @@ footer {
 }
 
 
+@media screen and (min-width: 576px) {
+    
+    footer {
+        flex-flow: row nowrap;
+    }
+
+    .tab-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+
+
+
 
 @media screen  and (min-width:768px){
+    
+
+    .hero-section {
+        text-align: left;
+    }
+
+
+    h1 {
+        font-size: 1.8rem;
+        margin-left: .7rem;
+    }
+    
+    
+    .call-to-actions {
+        justify-content: flex-start;
+        margin-left: .5rem;
+    }
+    .call-to-actions a {
+        text-align: center;
+    }
+
+
     .grid-container {
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr ;
     }
     .about-me-tab {
         grid-template-columns: repeat(2, minmax(0, 30rem));
@@ -803,22 +848,81 @@ footer {
     .theme-switch {
         display: flex;
     }
-    .education-tab {
-        grid-template-columns: 1fr 1fr 1fr;
+    .contact-grid {
+        grid-template-columns: 1fr 1fr ;
     }
-    .education-tab {
-        grid-template-columns: 1fr 1fr 1fr;
+
+    .contact-links {
+        justify-content: flex-start;
     }
 }
 
-@media screen  and (min-width:1024px){
-    .grid-container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
 
+
+
+@media screen and (min-width: 992px) {
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .about-me-tab {
         grid-template-columns: repeat(2, minmax(0, 30rem));
         gap: .5rem;
         justify-content: center;
     }
+
+    .tab-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: .6rem;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: .5rem;
+        width: 57rem;
+        margin: 0 auto;
+    }
+
+    .call-to-actions {
+        margin-top: 1.5rem;
+    }
+
+    header {
+        max-width: 1320px;
+        
+    }
 }
+
+
+
+
+@media screen  and (min-width:1200px){
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+    .about-me-tab {
+        grid-template-columns: repeat(2, minmax(0, 35rem));
+        gap: .5rem;
+        justify-content: center;
+    }
+
+    .contact-grid {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
