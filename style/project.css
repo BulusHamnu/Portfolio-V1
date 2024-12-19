@@ -1,0 +1,44 @@
+/* Project details style */
+.project-details {
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.project-details h3 a {
+    color: var(--textColor);
+    text-decoration: underline;
+}
+
+.project-details h1 {
+    margin-bottom: 1rem;
+}
+
+.project-details .tags {
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem;
+}
+.project-details .tags span {
+    background-color: var(--secondaryColor);
+    padding: .3rem .7rem;
+}
+
+.project-details .tags span {
+    background-color: var(--secondaryColor);
+    padding: .3rem .7rem;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.project-buttons a{
+    text-align: center;
+}
+
+
+
+
+

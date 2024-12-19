@@ -1,0 +1,40 @@
+/* Blog details style */
+
+.blog-details {
+    margin: 6rem 1rem;
+    padding-bottom: 4rem;
+}
+a {
+    color: var(--textColor);
+    text-decoration: underline;
+}
+
+.blog-title {
+    margin-bottom: .5rem;
+}
+
+.blog-date {
+    font-size:1rem;
+    color: var(--textColor);
+    margin-bottom: 2rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    gap: .8rem;
+}
+
+.tags a{
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    background-color: var(--secondaryColor);
+}
+
+
+
+
+
+
+

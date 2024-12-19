@@ -69,6 +69,8 @@ h4 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 header {
@@ -571,12 +573,6 @@ h2 {
 }
 
 
-.experiences-tab.active {
-    display: grid;
-}
-.education-tab.active {
-    display: grid;
-}
 
 .education-tab .type,.experiences-tab .type {
     background-color: var(--primaryColor);
@@ -597,6 +593,15 @@ h2 {
     border-radius: 100%;
     margin: 0 .2rem 0 0;
 }
+
+.experiences-tab.active {
+    display: grid;
+}
+.education-tab.active {
+    display: grid;
+}
+
+
 
 
 
@@ -728,7 +733,7 @@ h2 {
     color: var(--buttonhover);
 }
 .blog-list .blog h4{
-    margin: .6rem 0;
+    margin: .6rem;
     color: var(--textColor);
     transition: color .2s linear;
     text-align: justify;
@@ -784,7 +789,6 @@ footer {
         grid-template-columns: 1fr 1fr 1fr ;
     }
     .about-me-tab {
-        /* display: grid; */
         grid-template-columns: repeat(2, minmax(0, 30rem));
         gap: .5rem;
         justify-content: center;
@@ -802,6 +806,9 @@ footer {
     .education-tab {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .education-tab {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media screen  and (min-width:1024px){
@@ -810,7 +817,6 @@ footer {
 
     }
     .about-me-tab {
-        /* display: grid; */
         grid-template-columns: repeat(2, minmax(0, 30rem));
         gap: .5rem;
         justify-content: center;
