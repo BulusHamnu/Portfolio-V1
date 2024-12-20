@@ -281,6 +281,7 @@ header.active {
     padding: 1rem;
     font-size: 1.1rem;
     transition: background-color 0.2s linear;
+    text-transform: uppercase ;
 }
 .side-navBar nav ul li a:hover{
     background-color: var(--buttonhover);

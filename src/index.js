@@ -1,18 +1,77 @@
 /* Variable */
+import {projects,blogs} from "../data/data.js"  ;
 const contactForm = document.querySelector(".form-js");
 const closeModal = document.querySelector(".close-modal");
 const contactModal = document.querySelector(".contact-modal");
 const tabButtons = document.querySelectorAll(".tab-button");
 const slider = document.querySelector(".slider")
 const sliderCont = document.querySelector(".skills-list")
-import {projects,blogs} from "../data/data.js"  ;
+const projectListCont = document.querySelector(".project-list")
+const blogListCont = document.querySelector(".blog-list")
 
+const gang = 0;
 
-document.querySelector(".about-me-tab").classList.toggle("active"); //display my about tab
+/* Set display about me tab and set the copyright date */
+document.querySelector(".about-me-tab").classList.toggle("active"); 
 document.querySelector(".copyright-date").innerText = new Date().getFullYear().toString();
-console.log(projects)
-console.log(blogs)
 
+
+
+
+
+/* Function to dynamically load all the projects */
+function getProjects() {
+
+    if (projects.length === 0) {
+        document.querySelector(".projects-section").style.display = "none"
+        document.querySelectorAll('a').forEach( link => {if (link.innerText == "PROJECTS") link.style.display = "none"})
+    } else {
+        let allProjects = "";
+
+        projects.forEach(project => {
+            if (project.latest) {
+                let projectDetails = `
+                <div class="project-card" data-projectid=${project.id}>
+                    <div class="project-cover"><img src="${project.image}" alt="${project.title}"></div>
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-description">${project.header}</p>
+                    <a href="project.html?project=${project.id}">View project details <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></a>
+                </div>
+            
+            ` 
+
+            allProjects += projectDetails;
+            }
+            
+        });
+
+        projectListCont.innerHTML = allProjects;
+
+        document.querySelectorAll(".project-card").forEach( projectCard => {
+            projectCard.addEventListener("click", (event) => {
+                let id = projectCard.dataset.projectid;
+                console.log(id)
+                window.location.href = "project.html?project=" + id;
+                
+            });
+        })
+    }
+
+}
+
+
+
+
+
+
+getProjects()
+
+
+if(gang === 0) {
+    
+    document.querySelector(".blog-section").style.display = "none"
+    document.querySelectorAll('a').forEach( link => {if (link.innerText == "BLOGS") link.style.display = "none"})
+}
 
 
 /* NOdeClone and animation  handliong of skills section */

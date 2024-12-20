@@ -4,7 +4,7 @@ export {projects,blogs}
   const projects = [
     {
         id : 1,
-        image: "path/to/image1.jpg",
+        image: "Asserts/Icons/DEMYSTUDIO.png",
         title: "Project 1",
         header : "lorewikipedia",
         description: "Description of project 1.",
@@ -13,30 +13,34 @@ export {projects,blogs}
             demoUrl: "Visit website",
             git_hubUrl: "https://example.com/project1"
         },
+        latest : true,
     },
     {
         id : 2,
-        image: "path/to/image1.jpg",
+        image: "Asserts/Icons/DEMYSTUDIO.png",
         title: "Project 2",
         header : "lorewikipedia",
-        description: "Description of project 1.",
+        description: "Description of project 2.",
         technologies: ["HTML", "CSS", "JavaScript"],
         link: {
             demoUrl: "Visit website",
             git_hubUrl: "https://example.com/project1"
-        }
+        },
+        latest : false,
     },
     {
         id : 3,
-        image: "path/to/image1.jpg",
+        image: "Asserts/Icons/DEMYSTUDIO.png",
         title: "Project 3",
         header : "lorewikipedia",
-        description: "Description of project 1.",
+        description: "Description of project 3.",
         technologies: ["HTML", "CSS", "JavaScript","Php","MongoDb"],
         link: {
             demoUrl: "Visit website",
             git_hubUrl: "https://example.com/project1"
         }
+        ,
+        latest : true,
     },
     
 ];
