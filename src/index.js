@@ -5,9 +5,13 @@ const contactModal = document.querySelector(".contact-modal");
 const tabButtons = document.querySelectorAll(".tab-button");
 const slider = document.querySelector(".slider")
 const sliderCont = document.querySelector(".skills-list")
+import {projects,blogs} from "../data/data.js"  ;
 
 
 document.querySelector(".about-me-tab").classList.toggle("active"); //display my about tab
+document.querySelector(".copyright-date").innerText = new Date().getFullYear().toString();
+console.log(projects)
+console.log(blogs)
 
 
 
