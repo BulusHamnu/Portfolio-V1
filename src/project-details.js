@@ -28,7 +28,7 @@ if(projectId) {
                     <img src=${project.image} alt="${project.title}">
                     <div class="tags">${techTypes}</div>
                     <div class="project-buttons">
-                        <a href="${project.link.demoUrl}" class="button">Demo</a>
+                        <a href="${project.link.demoUrl}" class="button projectDemo">Demo</a>
                         <a href="${project.link.git_hubUrl}" class="button-transparent">Code</a>
                     </div>
                     
@@ -38,6 +38,7 @@ if(projectId) {
             `
     
             projectContainer.innerHTML = projectDetail;
+            if (!project.link.demoUrl) {document.querySelector(".projectDemo").style.display = "none";}
         }
     
         

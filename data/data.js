@@ -36,7 +36,7 @@ export {projects,blogs}
         description: "Description of project 3.",
         technologies: ["HTML", "CSS", "JavaScript","Php","MongoDb"],
         link: {
-            demoUrl: "Visit website",
+            demoUrl: "",
             git_hubUrl: "https://example.com/project1"
         }
         ,
@@ -54,14 +54,14 @@ export {projects,blogs}
         image: "path/to/image1.jpg",
         title: "Blog 1",
         date : "20th December 2009",
-        description: "Description of blog 1.",
+        description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
         link: "https://example.com/Blog1",
     },
     {
         image: "path/to/image1.jpg",
         title: "Blog 2",
         date : "20th December 2025",
-        description: "Description of blog 2.",
+        description: "Description of blog 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
         link: "https://example.com/Blog2",
     },
     

@@ -9,7 +9,7 @@ const sliderCont = document.querySelector(".skills-list")
 const projectListCont = document.querySelector(".project-list")
 const blogListCont = document.querySelector(".blog-list")
 
-const gang = 0;
+
 
 /* Set display about me tab and set the copyright date */
 document.querySelector(".about-me-tab").classList.toggle("active"); 
@@ -60,18 +60,39 @@ function getProjects() {
 }
 
 
+function getBlogs() {
+    if(blogs === 0) {
+        document.querySelector(".blog-section").style.display = "none"
+        document.querySelectorAll('a').forEach( link => {if (link.innerText == "BLOGS") link.style.display = "none"})
+    } else {
+        let allBlogs = "";
+        blogs.forEach( blog => {
+            let blogPost = `
+                <article class="blog" >
+                    <a href="${blog.link}"><h4 class="blog-title">${blog.title}.</h4></a>
+                    <p class="blog-date">${blog.date}</p>
+                    <p class="blog-content-preview">${blog.description}</p>
+                    <a href="${blog.link}" class="button">Read More..</a>
+                </article>
+            
+            `
+            allBlogs += blogPost;
+
+        });
+
+        blogListCont.innerHTML = allBlogs;
+    }
+}
 
 
 
 
+
+getBlogs()
 getProjects()
 
 
-if(gang === 0) {
-    
-    document.querySelector(".blog-section").style.display = "none"
-    document.querySelectorAll('a').forEach( link => {if (link.innerText == "BLOGS") link.style.display = "none"})
-}
+
 
 
 /* NOdeClone and animation  handliong of skills section */
