@@ -324,7 +324,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 2.8rem;
+    margin-top: 2.5rem;
 }
 
 .resume-btn {
@@ -655,12 +655,19 @@ h2 {
 .contact-form .form-group input[type="text"],input[type="email"] {
     height: 2.5rem;
 }
-.contact-form .form-group input[type="text"]:focus {
+.contact-form .form-group input[type="text"]:valid {
     border: .1rem solid var(--buttonColor);
 }
+.contact-form .form-group input[type="text"]:user-invalid {
+    border: .1rem solid red;
+}
 
-.contact-form .form-group input[type="email"]:focus {
+.contact-form .form-group input[type="email"]:valid {
     border: .2rem solid var(--buttonColor);
+}
+
+.contact-form .form-group input[type="email"]:user-invalid {
+    border: .1rem solid red;
 }
 
 
@@ -786,7 +793,11 @@ footer {
     color: var(--textColor);
     margin-top: 7rem;
     box-shadow: .1rem .1rem .7rem black;
-    
+    height: 10rem;
+}
+
+footer .social-links {
+    margin: 0;
 }
 
 
@@ -800,6 +811,7 @@ footer {
         --innerColorLite: #e5e5e5;     
         --buttonColor: #0078d7;        
         --buttonhover: #005a9e;
+        --primaryColor-rgb: 247, 247, 247;
     }
 }
 
