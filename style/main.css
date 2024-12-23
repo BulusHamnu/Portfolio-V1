@@ -17,7 +17,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 6vmax;
+    scroll-padding-top: 9vmax;
 }
 
 /* Style for all svg */
@@ -72,7 +72,6 @@ h4 {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 31rem;
     gap: 1rem;
     align-items: center;
 }
@@ -95,6 +94,7 @@ header {
 header.active {
     background-color: var(--primaryColor);
 }
+
 
 /* Logo Design */
 .logo {
@@ -290,6 +290,7 @@ header.active {
 }
 .side-navBar nav ul li a:hover{
     background-color: var(--buttonhover);
+    color: white;
 }
 
 .side-navBar .theme-switch {
@@ -300,6 +301,9 @@ header.active {
 }
 
 
+nav a.active {
+    color: var(--buttonColor);
+}
 
 
 /* Hero section */
@@ -337,7 +341,19 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: .2rem;
-} 
+    position: relative;
+}
+/* .resume-btn::after {
+    content: "";
+    background-color: var(--textColor);
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    height: 100%;
+}  */
+
 
 
 
@@ -480,6 +496,8 @@ h2 {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     border: .2rem solid var(--textColor);
     background-color: var(--primaryColor);
     border-radius: .5rem;
@@ -488,7 +506,7 @@ h2 {
     color: var(--textColor);
     transition: box-shadow 0.2s linear;
     position: relative;
-    height: 31rem;
+    height: 100%;
     cursor: pointer;
 }
 .project-card p {
@@ -520,6 +538,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
+    
 }
 .project-card a:hover {
     color: var(--buttonhover);
@@ -556,7 +576,7 @@ h2 {
     margin-left: .6rem;
     margin-bottom: .5rem;
     margin-top: 1rem;
-    font-size: 1.3;
+    font-size: 1.3rem;
 }
 .avatar img {
     filter: grayscale(1);
@@ -916,6 +936,8 @@ footer .social-links {
     .menu-btn-cont {
         display: none;
     }
+
+    
     .theme-switch {
         display: flex;
     }
@@ -935,6 +957,10 @@ footer .social-links {
 
 
 @media screen and (min-width: 992px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 4vmax;
+    }
     
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr ;

@@ -35,12 +35,50 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+/* event listener for navbars link to activate active class when clcik */
+let navLinks = document.querySelectorAll("nav a")
+
+navLinks.forEach( link => {
+    link.addEventListener("click", function () {
+        navLinks.forEach( link => {
+          link.classList.remove("active");
+        } );
+        link.classList.add("active");
+    });
+});
+
+
+
+
 /* Event listeners */
 menuBtn.addEventListener("click", function () {
+
     menuBtn.classList.toggle("active");
     sideNavBar.classList.toggle("active");
     overLay.classList.toggle("active");
     header.classList.toggle("active");
+
+    if(menuBtn.classList.contains("active")) {
+        // menuBtn.setAttribute("aria-hidden", "true");
+        menuBtn.setAttribute("aria-expanded", "true");
+        sideNavBar.setAttribute("aria-hidden", "false");
+
+        sideNavBar.querySelectorAll("a").forEach( link => {
+            link.setAttribute("tabindex", "0");
+        })
+
+    } else {
+        menuBtn.setAttribute("aria-expanded", "false");
+        sideNavBar.setAttribute("aria-hidden", "true");
+
+        sideNavBar.querySelectorAll("a").forEach( link => {
+            link.setAttribute("tabindex", "-1");
+        })
+    }
+
+    
+    
 });
 
 themeSwitch.forEach( toogle => {

@@ -136,6 +136,7 @@ contactForm.addEventListener("submit", (event) => {
                 contactModal.querySelector("h4").innerText = "Message sent!";
                 contactModal.querySelector("p").innerText = "Thank you for reaching out! I'll get back to you shortly.";
                 contactModal.style.display = "block";
+                contactModal.setAttribute("aria-hidden", "false")
 
             } else {
 
@@ -155,6 +156,7 @@ contactForm.addEventListener("submit", (event) => {
 
 closeModal.addEventListener("click", function () {
     contactModal.style.display = "none";
+    contactModal.setAttribute("aria-hidden", "true")
 });
 
 
@@ -162,8 +164,14 @@ closeModal.addEventListener("click", function () {
 tabButtons.forEach( tab => {
 
     tab.addEventListener("click", function () {
-        tabButtons.forEach( tab => tab.classList.remove("active"));
+        tabButtons.forEach( tab =>
+        {
+            tab.setAttribute("aria-selected", "false");
+            tab.classList.remove("active")
+        }
+        );
         tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
 
         const content = document.querySelector(`.${tab.dataset.tabname}`);
         content.parentNode.querySelectorAll(".tab-content").forEach( content => content.classList.remove("active"))
