@@ -37,6 +37,7 @@
 .project-details .tags span {
     background-color: var(--secondaryColor);
     padding: .3rem .7rem;
+    text-transform: capitalize;
 }
 
 .project-buttons {

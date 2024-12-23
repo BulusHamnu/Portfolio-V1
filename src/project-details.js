@@ -28,8 +28,8 @@ if(projectId) {
                     <img src=${project.image} alt="${project.title}">
                     <div class="tags">${techTypes}</div>
                     <div class="project-buttons">
-                        <a href="${project.link.demoUrl}" class="button projectDemo">Demo</a>
-                        <a href="${project.link.git_hubUrl}" class="button-transparent">Code</a>
+                        <a href="${project.link.demoUrl}" class="button projectDemo" target="_blank">Demo</a>
+                        <a href="${project.link.git_hubUrl}" class="button-transparent" target="_blank">Code</a>
                     </div>
                     
                     <h2>Description</h2>

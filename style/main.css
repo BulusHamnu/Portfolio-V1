@@ -8,15 +8,20 @@
     --innerColor: #1A1A1A;
     --innerColorLite: #4f4040;
     --buttonColor : #1E90FF;
+    --buttonTextColor : #ffffff;
     --buttonhover: #0C75E3;
     --importantinfo: #FFA500;
     --dangerColor : red;
     --primaryColor-rgb: 24, 28, 40;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6vmax;
+}
+
 /* Style for all svg */
 .svg-icon {
-    color: var(--textColor);
     fill: var(--textColor);
 }
 
@@ -34,7 +39,6 @@ body {
     color: var(--textColor);
     height: 100vh;
     font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
 }
 body.theme-light {
     --primaryColor: #f7f7f7;       
@@ -68,6 +72,7 @@ h4 {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 31rem;
     gap: 1rem;
     align-items: center;
 }
@@ -332,13 +337,14 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: .2rem;
-}
+} 
+
 
 
 .button {
     display: inline-block;
     background-color: var(--buttonColor);
-    color: var(--textColor);
+    color: var(--buttonTextColor);
     padding: .7rem .2rem;
     width: 7rem;
     border-radius: .3rem;
@@ -360,13 +366,19 @@ h1 {
     height: 1rem;
 }
 
+
 .button:hover {
     background-color: var(--buttonhover);
 }
 
 .button-transparent:hover {
     background-color: var(--buttonhover);
+    color: var(--buttonTextColor);
 }
+.button-transparent:hover  svg {
+    fill: var(--buttonTextColor);
+}
+
 
 .social-links {
     display: flex;
@@ -464,7 +476,7 @@ h2 {
     margin: 5rem auto;
 }
 .project-list {
-    margin: 1rem .2rem;
+    margin: 1rem .5rem;
 }
 
 .project-card {
@@ -476,7 +488,17 @@ h2 {
     color: var(--textColor);
     transition: box-shadow 0.2s linear;
     position: relative;
-
+    height: 31rem;
+    cursor: pointer;
+}
+.project-card p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    -webkit-line-clamp: 4; 
+    word-spacing: 1px;
 }
 
 .project-card:hover {
@@ -517,7 +539,7 @@ h2 {
 /* About me section */
 .about-me {
     text-align: center;
-    margin: 4rem auto;
+    margin: 5rem auto;
     padding: .2rem;
 }
 .about-me-tab {
@@ -567,9 +589,11 @@ h2 {
 .tabs .tab-button.active {
     background-color: var(--buttonhover);
     font-weight: 600;
+    color: var(--buttonTextColor);
 }
 .tabs .tab-button:hover {
     background-color: var(--buttonhover);
+    color: var(--buttonTextColor);
 }
 .about-me-tab {
     text-align: left;
@@ -741,7 +765,7 @@ h2 {
 }
 .blog-list {
     text-align: center;
-    margin: .4rem;
+    margin: .5rem;
     margin-top: 1.1rem;
 }
 .blog-list .article-link {
@@ -759,11 +783,22 @@ h2 {
 }
 .blog-list .blog h4{
     margin: .6rem;
+    margin-bottom: 0;
     color: var(--textColor);
     transition: color .2s linear;
     text-align: justify;
 }
-.blog-list .blog p{
+
+.blog-list .blog .blog-content-preview{
+    margin-top: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.blog-list .blog .blog-date{
     margin-top: 0;
 }
 .blog-date {
@@ -902,7 +937,8 @@ footer .social-links {
 @media screen and (min-width: 992px) {
     
     .grid-container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
+        
     }
     .about-me-tab {
         grid-template-columns: repeat(2, minmax(0, 30rem));
@@ -954,9 +990,7 @@ footer .social-links {
     h3 {
         font-size: 1.2rem;
     }
-    p {
-        font-size: 1.1rem;
-    }
+    
     
     
     .about-me-tab {

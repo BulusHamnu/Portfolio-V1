@@ -4,40 +4,37 @@ export {projects,blogs}
   const projects = [
     {
         id : 1,
-        image: "Asserts/Icons/DEMYSTUDIO.png",
-        title: "Project 1",
-        header : "lorewikipedia",
-        description: "Description of project 1.",
-        technologies: ["HTML", "CSS", "JavaScript","Live server"],
+        image: "Asserts/images/demystudio.png",
+        title: "Demy's Studio",
+        description: "Demy's Studio is a portfolio website for a photography studio to showcase its potential and display its work to the world. It features a responsive design built with Bootstrap's grid system and pre-built components. The website integrates with the Unsplash API to fetch high-quality images from various categories, such as products, events, and lifestyle. It also implements a pagination design to load and display more images as users scroll down.",
+        technologies: ["HTML", "CSS", "JavaScript","Bootstrap","Unsplash API","Formspree API"],
         link: {
-            demoUrl: "Visit website",
-            git_hubUrl: "https://example.com/project1"
+            demoUrl: "",
+            git_hubUrl: "https://github.com/BulusHamnu/Demy-Studio.git"
         },
         latest : true,
     },
     {
         id : 2,
-        image: "Asserts/Icons/DEMYSTUDIO.png",
-        title: "Project 2",
-        header : "lorewikipedia",
-        description: "Description of project 2.",
-        technologies: ["HTML", "CSS", "JavaScript"],
+        image: "Asserts/images/Yodemy-site.png",
+        title: "Yo Demy Music",
+        description: "Yo Demy Music is a personal website project I built for myself because I occasionally create music. Although I don't actively use it, I developed the site as part of my portfolio and to test my web development skills. The site features a home page, a music page, and a videos page. It also integrates the YouTube API to fetch artist videos from YouTube and embed them on the videos page. Additionally, there is Formspree API integration to handle form submissions and send them directly to the owner's email.",
+        technologies: ["HTML", "CSS", "JavaScript","YouTube API","FormSpree API"], 
         link: {
-            demoUrl: "Visit website",
-            git_hubUrl: "https://example.com/project1"
+            demoUrl: "",
+            git_hubUrl: "https://github.com/BulusHamnu/Yodemy-Music.git"
         },
-        latest : false,
+        latest : true,
     },
     {
         id : 3,
-        image: "Asserts/Icons/DEMYSTUDIO.png",
-        title: "Project 3",
-        header : "lorewikipedia",
-        description: "Description of project 3.",
-        technologies: ["HTML", "CSS", "JavaScript","Php","MongoDb"],
+        image: "Asserts/images/animequiz.png",
+        title: "AnimeQ",
+        description: "AnimeQ is a quiz game that I created using HTML, CSS, and JavaScript. It features user-friendly design, 10 real-world anime questions that you can answer to earn points for each correct response. The game includes a score counter and a timer. If the timer runs out, the correct answer will be displayed; however, even if you check and click it again, you will not earn points for that question..",
+        technologies: ["HTML", "CSS", "JavaScript"],
         link: {
-            demoUrl: "",
-            git_hubUrl: "https://example.com/project1"
+            demoUrl: "https://bulushamnu.github.io/AnimeQ-Game/",
+            git_hubUrl: "https://github.com/BulusHamnu/AnimeQ-Game.git"
         }
         ,
         latest : true,
@@ -54,7 +51,7 @@ export {projects,blogs}
         image: "path/to/image1.jpg",
         title: "Blog 1",
         date : "20th December 2009",
-        description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
+        description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
         link: "https://example.com/Blog1",
     },
     {
