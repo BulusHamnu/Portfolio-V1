@@ -9,8 +9,8 @@ export {projects,blogs}
         description: "Demy's Studio is a portfolio website for a photography studio to showcase its potential and display its work to the world. It features a responsive design built with Bootstrap's grid system and pre-built components. The website integrates with the Unsplash API to fetch high-quality images from various categories, such as products, events, and lifestyle. It also implements a pagination design to load and display more images as users scroll down.",
         technologies: ["HTML", "CSS", "JavaScript","Bootstrap","Unsplash API","Formspree API"],
         link: {
-            demoUrl: "",
-            git_hubUrl: "https://github.com/BulusHamnu/Demy-Studio.git"
+            demoUrl: "https://bulushamnu.github.io/demys-studio/",
+            git_hubUrl: "https://github.com/BulusHamnu/demys-studio.git"
         },
         latest : true,
     },
@@ -22,7 +22,7 @@ export {projects,blogs}
         technologies: ["HTML", "CSS", "JavaScript","YouTube API","FormSpree API"], 
         link: {
             demoUrl: "",
-            git_hubUrl: "https://github.com/BulusHamnu/Yodemy-Music.git"
+            git_hubUrl: "https://github.com/BulusHamnu/yodemy-music.git"
         },
         latest : true,
     },
@@ -30,11 +30,11 @@ export {projects,blogs}
         id : 3,
         image: "Asserts/images/animequiz.png",
         title: "AnimeQ",
-        description: "AnimeQ is a quiz game that I created using HTML, CSS, and JavaScript. It features user-friendly design, 10 real-world anime questions that you can answer to earn points for each correct response. The game includes a score counter and a timer. If the timer runs out, the correct answer will be displayed; however, even if you check and click it again, you will not earn points for that question..",
+        description: "AnimeQ is a quiz game that I created using HTML, CSS, and JavaScript. It features user-friendly design, 10 real-world anime questions that you can answer to earn points for each correct response. The game includes a score counter and a timer. If the timer runs out, the correct answer will be displayed; however, even if you check and click it again, you will not earn points for that question.",
         technologies: ["HTML", "CSS", "JavaScript"],
         link: {
-            demoUrl: "https://bulushamnu.github.io/AnimeQ-Game/",
-            git_hubUrl: "https://github.com/BulusHamnu/AnimeQ-Game.git"
+            demoUrl: "https://bulushamnu.github.io/animeq-game/",
+            git_hubUrl: "https://github.com/BulusHamnu/animeq-game.git"
         }
         ,
         latest : true,
@@ -47,20 +47,13 @@ export {projects,blogs}
 
   const blogs = [
 
-    {
-        image: "path/to/image1.jpg",
-        title: "Blog 1",
-        date : "20th December 2009",
-        description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
-        link: "https://example.com/Blog1",
-    },
-    {
-        image: "path/to/image1.jpg",
-        title: "Blog 2",
-        date : "20th December 2025",
-        description: "Description of blog 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
-        link: "https://example.com/Blog2",
-    },
+    // {
+    //     image: "path/to/image1.jpg",
+    //     title: "Blog 1",
+    //     date : "20th December 2009",
+    //     description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
+    //     link: "blogs/blog-template.html",
+    // },
     
 ];
 

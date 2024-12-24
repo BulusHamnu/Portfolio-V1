@@ -1,5 +1,5 @@
 /* Variable */
-import {projects,blogs} from "../data/data.js"  ;
+import {projects,blogs} from "../data/data.js" ;
 const contactForm = document.querySelector(".form-js");
 const closeModal = document.querySelector(".close-modal");
 const contactModal = document.querySelector(".contact-modal");
@@ -24,7 +24,7 @@ function getProjects() {
 
     if (projects.length === 0) {
         document.querySelector(".projects-section").style.display = "none"
-        document.querySelectorAll('a').forEach( link => {if (link.innerText == "PROJECTS") link.style.display = "none"})
+
     } else {
         let allProjects = "";
 
@@ -61,9 +61,8 @@ function getProjects() {
 
 
 function getBlogs() {
-    if(blogs === 0) {
-        document.querySelector(".blog-section").style.display = "none"
-        document.querySelectorAll('a').forEach( link => {if (link.innerText == "BLOGS") link.style.display = "none"})
+    if(blogs.length === 0) {
+        document.querySelector(".blog-section").style.display = "none";
     } else {
         let allBlogs = "";
         blogs.forEach( blog => {

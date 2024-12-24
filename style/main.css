@@ -343,16 +343,8 @@ h1 {
     gap: .2rem;
     position: relative;
 }
-/* .resume-btn::after {
-    content: "";
-    background-color: var(--textColor);
-    position: absolute;
-    bottom: -100%;
-    right: 0;
-    width: 5rem;
-    height: 5rem;
-    height: 100%;
-}  */
+
+
 
 
 
@@ -444,6 +436,7 @@ h2 {
     margin-bottom: 3rem;
     margin-left: 1rem;
     animation: auto-play 15s linear infinite;
+    
 }
 
 .slider.paused {
@@ -452,11 +445,11 @@ h2 {
 
 
 @keyframes auto-play {
-    to {
-        transform: translateX(-100%);
-    }
-    from {
+    0% {
         transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 

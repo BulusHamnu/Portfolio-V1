@@ -1,22 +1,23 @@
 /* Blog details style */
 
 .blog-details {
-    margin: 6rem 1rem;
-    padding-bottom: 4rem;
-}
-a {
-    color: var(--textColor);
+    margin: 4rem 1rem;
+    padding-bottom: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
 }
 
-a {
-    color: var(--textColor);
-}
 h3 a {
+    color: var(--textColor);
     text-decoration: underline;
+}
+h3 a:hover {
+    color: var(--);
 }
 
 .title {
     margin-bottom: .5rem;
+    margin-top: 0;
     margin-left: 0rem;
 }
 
@@ -26,17 +27,9 @@ h3 a {
     margin-bottom: 2rem;
 }
 
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    gap: .8rem;
-}
-
-.tags a{
-    padding: .5rem 1rem;
-    font-size: .8rem;
-    background-color: var(--secondaryColor);
+p {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 

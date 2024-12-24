@@ -4,11 +4,7 @@ const blogListCont = document.querySelector(".blog-list")
 
 
 
-if(blogs === 0) {
-        document.querySelector(".blog-section").style.display = "none"
-        document.querySelectorAll('a').forEach( link => {if (link.innerText == "BLOGS") link.style.display = "none"})
-    } else {
-        let allBlogs = "";
+let allBlogs = "";
         blogs.forEach( blog => {
             let blogPost = `
                 <article class="blog" >
@@ -24,7 +20,6 @@ if(blogs === 0) {
         });
 
         blogListCont.innerHTML = allBlogs;
- }
 
 
 

@@ -1,5 +1,6 @@
 
 /* Variables */
+import {projects,blogs} from "../data/data.js"  ;
 const menuBtn = document.querySelector(".menu-btn-cont");
 const themeSwitch = document.querySelectorAll(".theme-switch");
 const sideNavBar = document.querySelector(".side-navBar");
@@ -35,6 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+/* Check if blogs and projects are avaible else it hide their respective links */
+if(blogs.length === 0 || blogs === undefined) {
+    document.querySelectorAll('nav a').forEach( link => {
+        if (link.innerText === "BLOGS") link.style.display = "none"})
+}
+
+if (projects.length === 0 || blogs === undefined) {
+    document.querySelectorAll('nav a').forEach( link => {  
+        if (link.innerText == "PROJECTS") link.style.display = "none"})
+    
+}
+
+
+
+
+
 
 /* event listener for navbars link to activate active class when clcik */
 let navLinks = document.querySelectorAll("nav a")
@@ -67,6 +84,9 @@ menuBtn.addEventListener("click", function () {
         sideNavBar.querySelectorAll("a").forEach( link => {
             link.setAttribute("tabindex", "0");
         })
+        sideNavBar.querySelector(".theme-switch").setAttribute("tabindex", "0");
+
+        
 
     } else {
         menuBtn.setAttribute("aria-expanded", "false");
@@ -75,6 +95,8 @@ menuBtn.addEventListener("click", function () {
         sideNavBar.querySelectorAll("a").forEach( link => {
             link.setAttribute("tabindex", "-1");
         })
+
+        sideNavBar.querySelector(".theme-switch").setAttribute("tabindex", "-1 ");
     }
 
     
