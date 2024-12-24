@@ -94,10 +94,10 @@ getProjects()
 
 
 
-/* NOdeClone and animation  handliong of skills section */
-let slider2 = slider.cloneNode(true);
-slider2.style.animation = ("auto-play 15s linear infinite");
-sliderCont.appendChild(slider2)
+// /* NOdeClone and animation  handliong of skills section */
+// let slider2 = slider.cloneNode(true);
+// slider2.style.animation = ("auto-play 15s linear infinite");
+// sliderCont.appendChild(slider2)
 
 
 const skills = document.querySelectorAll('.skills');

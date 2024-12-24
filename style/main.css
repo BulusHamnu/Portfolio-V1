@@ -322,10 +322,9 @@ h1 {
 
 .intro-graph,p {
     font-size: 1rem;
-    line-height: 1.7rem;
+    line-height: 1.8rem;
     margin: .6rem;
     margin-top: 1.1rem;
-    text-align: justify;
 }
 
 .call-to-actions {
@@ -410,8 +409,6 @@ h1 {
 /* Skills section */
 .skills-section {
     text-align: center;
-    background-color: var(--secondaryColor);
-    box-shadow: .1rem .1rem .7rem black;
     margin: .3rem;
 }
 
@@ -421,68 +418,56 @@ h2 {
     padding-top: 1.3rem;
 }
 .skills-list {
-    padding: .1rem .2rem;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row nowrap;
-    mask: linear-gradient(to right,transparent,black 7%,black 88%,transparent);
-}
-
-
-.slider {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
-    margin-bottom: 3rem;
-    margin-left: 1rem;
-    animation: auto-play 15s linear infinite;
-    
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    padding: 0 .5rem;
 }
 
-.slider.paused {
-    animation-play-state: paused !important ;
-}
-
-
-@keyframes auto-play {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-.slider .skills {
-    padding: .5rem 1.5rem;
+.skill-card {
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    box-shadow: .1rem .1rem .7rem black;
     border-radius: .5rem;
-    margin: .3rem;
-    background-color: var(--innerColor);
-    cursor: pointer;
-    transition: background-color 0.2s linear;
+    min-width: 100%;
 }
-.slider .skills p {
-    white-space: nowrap;
+.skill-card div {
+    align-self: flex-start;
 }
-.slider .skills:hover {
-    background-color: var(--innerColorLite);
-    transform: scale(1.1);
+.skill-card div p {
+    margin-top: .5rem;
+}
+.skill-card ul {
+    margin-top: .5rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    align-self: flex-start;
+    padding: .3rem 0;
+}
+.skill-card ul li {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card ul li img {
+    max-width: 2rem;
 }
 
-.slider .skills img {
-    width: 2.5rem;
-    margin: .3rem;
-}
 
-.slider .skills p {
-    font-size: .8rem;
-    margin: .4rem;
-}
 
 /* Projects section */
 .projects-section {
     text-align: center;
-    margin: 5rem auto;
+    margin: 6rem auto;
+    margin-bottom: 3rem;
 }
 .project-list {
     margin: 1rem .5rem;
@@ -552,7 +537,8 @@ h2 {
 /* About me section */
 .about-me {
     text-align: center;
-    margin: 5rem auto;
+    margin: 3rem auto;
+    margin-bottom: 5rem;
     padding: .2rem;
 }
 .about-me-tab {
@@ -658,7 +644,7 @@ h2 {
 /* Contact section */
 .contact-me {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .contact-form {
     text-align: left;
@@ -874,7 +860,16 @@ footer .social-links {
         grid-template-columns: 1fr 1fr;
     }
 
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .skills-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skills-list ul {
+        padding-top: 0;
+    }
 }
 
 
@@ -944,6 +939,12 @@ footer .social-links {
     .contact-links {
         justify-content: flex-start;
     }
+    .skills-list {
+        padding: 0 2rem;
+    }
+    .skill-card {
+        grid-template-rows: 190px 1fr;
+    }
 }
 
 
@@ -953,6 +954,10 @@ footer .social-links {
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 4vmax;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(3,1fr);
     }
     
     .grid-container {
@@ -1010,7 +1015,10 @@ footer .social-links {
         font-size: 1.2rem;
     }
     
-    
+    .skills-list {
+        grid-template-columns: repeat(4,1fr);
+        padding: 0 3rem;
+    }
     
     .about-me-tab {
         grid-template-columns: repeat(2, minmax(0, 35rem));
