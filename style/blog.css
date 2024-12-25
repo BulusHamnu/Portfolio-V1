@@ -5,27 +5,27 @@
     padding-bottom: 5rem;
 }
 
-h3 a {
+.blog-details h3 a {
     color: var(--textColor);
     text-decoration: underline;
 }
-h3 a:hover {
+.blog-details h3 a:hover {
     color: var(--);
 }
 
-.title {
+.blog-details .title {
     margin-bottom: .5rem;
     margin-top: 0;
     margin-left: 0rem;
 }
 
-.date {
+.blog-details .date {
     font-size:1rem;
     color: var(--textColor);
     margin-bottom: 2rem;
 }
 
-p {
+.blog-details p {
     margin-left: 0;
     margin-right: 0;
 }

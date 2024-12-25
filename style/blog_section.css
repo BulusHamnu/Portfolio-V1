@@ -1,0 +1,75 @@
+/* Blog section */
+
+.blog-section {
+    text-align: center;
+    margin: 4rem auto;
+}
+.blog-list {
+    text-align: center;
+    margin: .5rem;
+    margin-top: 1.1rem;
+}
+.blog-list .article-link {
+    color: var(--textColor);
+    cursor: pointer;
+}
+.blog-list .blog {
+    margin-bottom: .4rem;
+    border: .1rem solid var(--textColor);
+}
+
+.blog-list .blog h4:hover {
+    color: var(--buttonhover);
+}
+.blog-list .blog h4{
+    margin: .6rem;
+    margin-bottom: 0;
+    color: var(--textColor);
+    transition: color .2s linear;
+    text-align: justify;
+}
+
+.blog-list .blog p {
+    text-align: left;
+}
+
+.blog-list .blog .blog-content-preview{
+    margin-top: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.blog-list .blog .blog-date{
+    margin-top: 0;
+}
+.blog-date {
+    font-weight: 600;
+}
+.blog-list .blog .button{
+    margin: 1rem;
+    display: block;
+    margin-left: .5rem;
+}
+.blog-section .button{
+    margin: 1rem ;
+    display: block;
+    
+}
+
+@media screen and (min-width: 576px) {
+    .blog-list .blog .blog-content-preview{
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+}
+
+
+@media screen  and (min-width:768px){
+    .blog-list .blog .blog-content-preview{
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+}

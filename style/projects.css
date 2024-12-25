@@ -1,73 +1,11 @@
 
 /* Style for project page */
-.projects-section-main {
+.projects-section-page {
     margin-top: 2.5rem;
     padding-bottom: 2.5rem;
     text-align: center;
 }
-.project-list {
-    margin: 1rem .5rem;
+.project-page-list {
+    margin: 1rem .6rem;
 }
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    border: .2rem solid var(--textColor);
-    background-color: var(--primaryColor);
-    border-radius: .5rem;
-    padding: .5rem .5rem 3rem .5rem;
-    margin: 0 .2rem;
-    color: var(--textColor);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    height: 100%;
-    cursor: pointer;
-}
-.project-card p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box; 
-    -webkit-box-orient: vertical;
-    line-clamp: 4;
-    -webkit-line-clamp: 4; 
-}
-
-.project-card:hover {
-    box-shadow: .1rem .1rem .7rem var(--buttonColor), -.1rem -.1rem .7rem var(--buttonColor) ;
-}
-.project-cover img {
-    width: 100%;
-}
-.project-title {
-    margin: .6rem 0;
-}
-.project-description {
-    margin-top: .2rem;
-}
-.project-card a {
-    color: var(--textColor);
-    text-decoration: underline;
-    transition: color 0.2s linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    
-}
-.project-card a:hover {
-    color: var(--buttonhover);
-}
-.project-card a:hover svg{
-    fill: var(--buttonhover);
-}
-
-.view-all-projects {
-    margin-top: 2rem;
-    display: block;
-    margin-left: .5rem;
-}
-
-
-
-
 
