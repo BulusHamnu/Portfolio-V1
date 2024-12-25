@@ -47,13 +47,20 @@ export {projects,blogs}
 
   const blogs = [
 
-    // {
-    //     image: "path/to/image1.jpg",
-    //     title: "Blog 1",
-    //     date : "20th December 2009",
-    //     description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
-    //     link: "blogs/blog-template.html",
-    // },
+    {
+        image: "path/to/image1.jpg",
+        title: "Blog 1",
+        date : "20th December 2009",
+        description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
+        link: "blogs/blog-template.html",
+    },
+    {
+        image: "path/to/image1.jpg",
+        title: "Blog 2",
+        date : "20th December 2009",
+        description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
+        link: "blogs/blog-template.html",
+    },
     
 ];
 
