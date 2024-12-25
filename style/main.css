@@ -431,7 +431,7 @@ h2 {
     display: grid;
     align-items: center;
     background-color: var(--secondaryColor);
-    box-shadow: .1rem .1rem .7rem black;
+    box-shadow: .1rem .1rem .2rem black;
     border-radius: .5rem;
     min-width: 100%;
 }
