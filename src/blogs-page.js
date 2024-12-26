@@ -7,7 +7,7 @@ const blogListCont = document.querySelector(".blog-list")
 let allBlogs = "";
         blogs.forEach( blog => {
             let blogPost = `
-                <article class="blog" >
+                <article class="blog"style="padding: .5rem;" >
                     <a href="${blog.link}"><h4 class="blog-title">${blog.title}.</h4></a>
                     <p class="blog-date">${blog.date}</p>
                     <p class="blog-content-preview">${blog.description}</p>

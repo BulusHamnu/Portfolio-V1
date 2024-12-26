@@ -256,6 +256,9 @@ header.active {
 .over-lay.active {
     display: block;
 }
+.main_navbar a.active {
+    color: var(--buttonColor);
+}
 
 
 /* SideBar Nav */
@@ -280,7 +283,8 @@ header.active {
     height: 100%;
     margin-top: 1.5rem;
 }
-.side-navBar nav ul li a{
+
+.side-navBar nav ul li a {
     color: var(--textColor);
     display: block;
     padding: 1rem;
@@ -288,6 +292,7 @@ header.active {
     transition: background-color 0.2s linear;
     text-transform: uppercase ;
 }
+
 .side-navBar nav ul li a:hover{
     background-color: var(--buttonhover);
     color: white;
@@ -300,12 +305,12 @@ header.active {
     margin-top: 3rem;
 }
 
-
-nav a.active {
+.side-navBar a.active {
     color: var(--buttonColor);
 }
  
 
+/* Component styling */
 h1 {
     font-size: 1.8rem;
     margin-top: 1.5rem;

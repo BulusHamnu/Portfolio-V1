@@ -93,28 +93,6 @@ getProjects()
 
 
 
-
-// /* NOdeClone and animation  handliong of skills section */
-// let slider2 = slider.cloneNode(true);
-// slider2.style.animation = ("auto-play 15s linear infinite");
-// sliderCont.appendChild(slider2)
-
-
-const skills = document.querySelectorAll('.skills');
-const sliders = document.querySelectorAll('.slider');
-
-skills.forEach(skill => {
-    skill.addEventListener('mouseenter', () => {
-        sliders.forEach(s => s.classList.add('paused')); 
-    });
-
-    skill.addEventListener('mouseleave', () => {
-        sliders.forEach(s => s.classList.remove('paused'));
-    });
-});
-
-
-
 /* Form Handling */
 contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -181,4 +159,29 @@ tabButtons.forEach( tab => {
 
 });
 
+
+
+/* hightlight section a link when section is on screen */
+let threshold;
+if (window.innerWidth <= 768) {
+    //Viewing on mobile...
+    threshold = 0.4;
+} else {
+    threshold = 0.6;
+}
+
+let observer = new IntersectionObserver( entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll("nav a").forEach(link => {link.classList.remove("active")});
+            document.querySelectorAll("nav a").forEach(link => {
+                if(link.getAttribute("href") === "#" + entry.target.getAttribute("id")) {
+                    link.classList.add("active");
+                }
+            });
+        } 
+    });
+},{ threshold: threshold });
+
+document.querySelectorAll("section").forEach(section => observer.observe(section));
 

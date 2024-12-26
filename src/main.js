@@ -50,24 +50,6 @@ if (projects.length === 0 || blogs === undefined) {
 
 
 
-
-
-
-/* event listener for navbars link to activate active class when clcik */
-let navLinks = document.querySelectorAll("nav a")
-
-navLinks.forEach( link => {
-    link.addEventListener("click", function () {
-        navLinks.forEach( link => {
-          link.classList.remove("active");
-        } );
-        link.classList.add("active");
-    });
-});
-
-
-
-
 /* Event listeners */
 menuBtn.addEventListener("click", function () {
 
