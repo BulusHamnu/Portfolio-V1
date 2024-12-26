@@ -27,6 +27,6 @@ As the name suggests, this is Version 1. I'm looking forward to building upon th
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio.git
+   git clone https://github.com/BulusHamnu/Portfolio-V1.git
    
 2. Open the index.html file in your browser to view the portfolio locally.
