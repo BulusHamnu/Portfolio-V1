@@ -165,9 +165,9 @@ tabButtons.forEach( tab => {
 let threshold;
 if (window.innerWidth <= 768) {
     //Viewing on mobile...
-    threshold = 0.4;
+    threshold = 0.3;
 } else {
-    threshold = 0.6;
+    threshold = 0.4;
 }
 
 let observer = new IntersectionObserver( entries => {

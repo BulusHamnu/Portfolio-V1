@@ -51,7 +51,7 @@
 /* Skills section */
 .skills-section {
     text-align: center;
-    margin: .3rem;
+    margin: 3rem .3rem 4rem .3rem;
 }
 .skills-list {
     display: grid;

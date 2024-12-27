@@ -13,10 +13,31 @@
   referrerpolicy="no-referrer"
 />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/blog.css">
+    <link rel="stylesheet" href="../minified/main.min.css">
+    <link rel="stylesheet" href="../minified/blog.min.css">
 </head>
 <body >
+    <script>
+        let theme = localStorage.getItem("demySiteTheme");
+        const body = document.querySelector("body");
+        let systemDefault = window.matchMedia('(prefers-color-scheme: light)').matches;
+        
+
+        if(theme === "light") {
+            body.classList.add("theme-light");
+        } else if(theme === "dark") {
+            body.classList.remove("theme-light");
+        } else {
+            if(systemDefault) {
+                body.classList.add("theme-light");
+            } else {
+                body.classList.remove("theme-light");
+            }
+            
+        }
+
+        
+    </script>
     <div class="container">
 
         <!-- Header -->
@@ -24,8 +45,8 @@
             <a href="../index.html" class="logo" tabindex="-1">BULUS</a>
             <nav class="main_navbar" aria-label="main-navigation">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../index.html#skills">skills</a></li>
                 <li><a href="../index.html#projects">projects</a></li>
+                <li><a href="../index.html#skills">skills</a></li>
                 <li><a href="../index.html#about">about</a></li>
                 <li><a href="../index.html#contact_me">contact me</a></li>
                 <li><a href="../index.html#blogs">blogs</a></li>
@@ -35,8 +56,8 @@
                 <nav >
                     <ul>
                         <li><a href="../index.html" tabindex="-1">Home</a></li>
-                        <li><a href="../index.html#skills" tabindex="-1">skills</a></li>
                         <li><a href="../index.html#projects" tabindex="-1">projects</a></li>
+                        <li><a href="../index.html#skills" tabindex="-1">skills</a></li>
                         <li><a href="../index.html#about" tabindex="-1">about</a></li>
                         <li><a href="../index.html#contact_me" tabindex="-1">contact me</a></li>
                         <li><a href="../index.html#blogs" tabindex="-1">blogs</a></li>

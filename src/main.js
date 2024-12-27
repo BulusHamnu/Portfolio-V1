@@ -11,29 +11,18 @@ const switchEffect = document.querySelector(".switch-effect")
 
 
 
-/* init theme */
-document.addEventListener("DOMContentLoaded", () => {
-        let theme = localStorage.getItem("demySiteTheme");
-    
-        if (theme === "light") {
-            
-            body.classList.add("theme-light");
+/* Switch theme button */
+if (body.classList.contains("theme-light")){
+    themeSwitch.forEach(toogle => {
+        toogle.classList.add("active");
+    });
+} else {
+    themeSwitch.forEach(toogle => {
+        toogle.classList.remove("active");
+    });
+}
 
-            themeSwitch.forEach(toogle => {
-                toogle.classList.add("active");
-            });
-            
-        } else if (theme === "dark") {
-            
 
-            body.classList.remove("theme-light");
-
-            themeSwitch.forEach(toogle => {
-                toogle.classList.remove("active");
-            });
-        }
-
-});
 
 
 /* Check if blogs and projects are avaible else it hide their respective links */
@@ -122,7 +111,6 @@ window.addEventListener("scroll", function () {
     }
 
 });
-
 
 
 

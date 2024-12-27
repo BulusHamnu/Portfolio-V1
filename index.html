@@ -17,8 +17,30 @@
     <link rel="stylesheet" href="minified/index.min.css">
     <link rel="stylesheet" href="minified/project_section.min.css">
     <link rel="stylesheet" href="minified/blog_section.min.css">
+    
 </head>
 <body >
+    <script>
+        let theme = localStorage.getItem("demySiteTheme");
+        const body = document.querySelector("body");
+        let systemDefault = window.matchMedia('(prefers-color-scheme: light)').matches;
+        
+
+        if(theme === "light") {
+            body.classList.add("theme-light");
+        } else if(theme === "dark") {
+            body.classList.remove("theme-light");
+        } else {
+            if(systemDefault) {
+                body.classList.add("theme-light");
+            } else {
+                body.classList.remove("theme-light");
+            }
+            
+        }
+
+        
+    </script>
     <div class="container">
 
         <!-- Header -->
@@ -27,8 +49,8 @@
             <nav class="main_navbar" aria-label="main-navigation">
                 <ul>
                     <li><a href="#hero-section" aria-current="page">Home</a></li>
-                    <li><a href="#skills">skills</a></li>
                     <li><a href="#projects">projects</a></li>
+                    <li><a href="#skills">skills</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#contact_me">contact me</a></li>
                     <li><a href="#blogs">blogs</a></li>
@@ -39,8 +61,8 @@
                 <nav >
                     <ul>
                         <li><a href="#hero-section" aria-current="page" tabindex="-1" class="active">Home</a></li>
-                        <li><a href="#skills" tabindex="-1">skills</a></li>
                         <li><a href="#projects" tabindex="-1">projects</a></li>
+                        <li><a href="#skills" tabindex="-1">skills</a></li>
                         <li><a href="#about" tabindex="-1">about</a></li>
                         <li><a href="#contact_me" tabindex="-1">contact me</a></li>
                         <li><a href="#blogs" tabindex="-1">blogs</a></li>
@@ -75,6 +97,18 @@
                     <li><a href="https://ng.linkedin.com/in/bulus-hamnu-a2850a23b" target="_blank" aria-label="My linkedin profile link"><i class="fab fa-linkedin social-link svg-icon"></i></a></li>
                     <li><a href="https://youtube.com/@demythekidd888?si=mOPhmjUixqE5PCRj" target="_blank" aria-label="My youtube profile link"><i class="fa-brands fa-youtube social-link svg-icon" ></i></a></li>
                 </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects-section" id="projects">
+                <h2>Projects</h2>
+                <div class="project-list grid-container">
+        
+                    <!-- Project will be insert here -->
+                    
+   
+                </div>
+                <a href="projects.html" class="button view-all-projects">View All</a>
             </section>
 
             <!-- Skills section -->
@@ -148,18 +182,7 @@
      
             </section>
 
-            <!-- Projects Section -->
-             <section class="projects-section" id="projects">
-                <h2>Projects</h2>
-                <div class="project-list grid-container">
-        
-                    <!-- Project will be insert here -->
-                    
-   
-                </div>
-                <a href="projects.html" class="button view-all-projects">View All</a>
-            </section>
-
+    
             <!-- About me section -->
              <section class="about-me" id="about">
                 <h2>About Me</h2>
