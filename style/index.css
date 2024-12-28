@@ -1,4 +1,5 @@
 /* Hero section */
+
 .hero-section {
     margin-top: 5rem;
     min-width: 100%;
@@ -9,8 +10,12 @@
 .intro-graph {
     font-size: 1rem;
     line-height: 1.8rem;
-    margin: .6rem;
+    margin: .6rem auto;
     margin-top: 1.1rem;
+    text-align: left;
+    min-width: 10rem;
+    white-space: wrap;
+    padding: 0 .5rem;
 }
 
 .call-to-actions {
@@ -56,16 +61,18 @@
 .skills-list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 1rem auto;
     margin-bottom: 2rem;
     padding: 0 .5rem;
+    
 }
 
 .skill-card {
-    padding: 1rem;
+    padding: .5rem;
     display: grid;
     align-items: center;
+    justify-content: center;
     background-color: var(--secondaryColor);
     box-shadow: .1rem .1rem .2rem black;
     border-radius: .5rem;
@@ -74,8 +81,14 @@
 .skill-card div {
     align-self: flex-start;
 }
+ 
 .skill-card div p {
     margin-top: .5rem;
+    text-align: left;
+    min-width: 16rem;
+    white-space: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 .skill-card ul {
     margin-top: .5rem;
@@ -362,6 +375,7 @@ footer .social-links {
     footer {
         height: 7rem;
     }
+    
 
     .hero-section {
         text-align: left;
@@ -403,6 +417,9 @@ footer .social-links {
     }
     .skill-card {
         grid-template-rows: 190px 1fr;
+    }
+    .skill-card p {
+        padding: 0 .3rem;
     }
 
     .blog-list .blog {

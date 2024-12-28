@@ -26,9 +26,13 @@
     text-overflow: ellipsis;
     display: -webkit-box; 
     -webkit-box-orient: vertical;
-    line-clamp: 4;
-    -webkit-line-clamp: 4; 
-    
+    line-clamp: 5;
+    -webkit-line-clamp: 5; 
+    text-align: left;
+    min-width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: wrap;
 }
 
 .project-card:hover {
@@ -65,3 +69,13 @@
     display: block;
     margin-left: .5rem;
 }
+
+
+@media screen and (min-width: 768px) {
+    .project-card p {
+        line-clamp: 4;
+        -webkit-line-clamp: 4; 
+        padding: 0 .3rem;
+    }
+}
+
