@@ -43,6 +43,8 @@
 }
 .project-title {
     margin: .6rem 0;
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
 }
 .project-description {
     margin-top: .2rem;
