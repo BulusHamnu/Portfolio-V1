@@ -33,7 +33,7 @@ export {projects,blogs}
         description: "Yo Demy Music is a personal website project I built for myself because I occasionally create music. Although I don't actively use it, I developed the site as part of my portfolio and to test my web development skills. The site features a home page, a music page, and a videos page. It also integrates the YouTube API to fetch artist videos from YouTube and embed them on the videos page. Additionally, there is Formspree API integration to handle form submissions and send them directly to the owner's email.",
         technologies: ["HTML", "CSS", "JavaScript","YouTube API","FormSpree API"], 
         link: {
-            demoUrl: "",
+            demoUrl: "https://yodemymusic.vercel.app/",
             git_hubUrl: "https://github.com/BulusHamnu/yodemy-music.git"
         },
         latest : true,
