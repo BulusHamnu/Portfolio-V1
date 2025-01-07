@@ -51,6 +51,19 @@ export {projects,blogs}
         ,
         latest : true,
     },
+    {
+        id : 5,
+        image: "Asserts/images/fewercharacter.png",
+        title: "FewerCharacters",
+        description: "This project is a web application that uses a backend server to interact with the OpenAI API to shorten a given text to fit within a specified character limit while preserving its meaning. The project supports multiple responses for varied summaries.",
+        technologies: ["HTML", "CSS", "JavaScript","Vercel Serverless", "Open Ai"],
+        link: {
+            demoUrl: "https://fewercharacters.vercel.app/",
+            git_hubUrl: "https://github.com/BulusHamnu/fewerCharacters.git"
+        }
+        ,
+        latest : true,
+    },
     
 ];
 
