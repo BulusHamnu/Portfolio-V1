@@ -4,7 +4,7 @@ export {projects,blogs}
   const projects = [
     {
         id : 1,
-        image: "Asserts/images/portfolio_cover.png",
+        image: "Asserts/images/bulus_dev_cover.png",
         title: "Bulus-dev portfolio V1",
         description: "This is my personal portfolio website, designed to showcase my skills, projects, and experience as a developer. It includes an 'About Me' section where I share details about my background, education, and journey as a developer. The site also features a Dynamic Blogs section, where I write about my thoughts and share knowledge, and a Dynamic Projects section that highlights the work I’ve done. With a fully responsive design, the website ensures a great user experience on any device. Feel free to explore the site, and if you have any suggestions or feedback on how I can improve, don’t hesitate to reach out!",
         technologies: ["HTML", "CSS","Javascript","Formspree API"],
@@ -16,7 +16,7 @@ export {projects,blogs}
     },
     {
         id : 2,
-        image: "Asserts/images/demystudio.png",
+        image: "Asserts/images/demy studio image.png",
         title: "Demy's Studio",
         description: "Demy's Studio is a portfolio website for a photography studio to showcase its potential and display its work to the world. It features a responsive design built with Bootstrap's grid system and pre-built components. The website integrates with the Unsplash API to fetch high-quality images from various categories, such as products, events, and lifestyle. It also implements a pagination design to load and display more images as users scroll down.",
         technologies: ["HTML", "CSS", "JavaScript","Bootstrap","Unsplash API","Formspree API"],
@@ -28,7 +28,7 @@ export {projects,blogs}
     },
     {
         id : 3,
-        image: "Asserts/images/Yodemy-site.png",
+        image: "Asserts/images/yo_demy_cover.png",
         title: "Yo Demy Music",
         description: "Yo Demy Music is a personal website project I built for myself because I occasionally create music. Although I don't actively use it, I developed the site as part of my portfolio and to test my web development skills. The site features a home page, a music page, and a videos page. It also integrates the YouTube API to fetch artist videos from YouTube and embed them on the videos page. Additionally, there is Formspree API integration to handle form submissions and send them directly to the owner's email.",
         technologies: ["HTML", "CSS", "JavaScript","YouTube API","FormSpree API"], 
@@ -60,6 +60,19 @@ export {projects,blogs}
         link: {
             demoUrl: "https://fewercharacters.vercel.app/",
             git_hubUrl: "https://github.com/BulusHamnu/fewerCharacters.git"
+        }
+        ,
+        latest : true,
+    },
+    {
+        id : 6,
+        image: "Asserts/images/demi_tasks_cover.png",
+        title: "Demi-Tasks Mananger",
+        description: "Demi Tasks Manager is a powerful tool that helps you organize tasks, track progress, and analyze productivity. It allows you to create, edit, and delete tasks, add to-dos, attachments, and due dates, and categorize tasks for better organization. The dashboard provides an overview of tasks by status, while the integrated Vanilla Calendar helps with scheduling. Chart.js offers insights into task completion, and IndexedDB ensures large data storage, including files. Future updates will include reminders and notifications to enhance task management.",
+        technologies: ["HTML", "CSS", "JavaScript","IndexDb", "Chart.js", "Vanilla Calendar"],
+        link: {
+            demoUrl: "https://demitasks.vercel.app/",
+            git_hubUrl: "https://github.com/BulusHamnu/Demi-Tasks.git"
         }
         ,
         latest : true,
