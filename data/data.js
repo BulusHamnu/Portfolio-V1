@@ -85,13 +85,13 @@ export {projects,blogs}
 
   const blogs = [
 
-    // {
-    //     image: "path/to/image1.jpg",
-    //     title: "Blog 1",
-    //     date : "20th December 2009",
-    //     description: "Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?. Description of blog 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum mollitia cupiditate officiis omnis nemo tenetur consequatur vitae quos! Labore, odio quis. Ab dolorem nam porro, asperiores libero quaerat id?.",
-    //     link: "blogs/blog-template.html",
-    // },
+    {
+        image: "../Asserts/images/sad_pikachu.png",
+        title: "Fueling My Creativity: The Challenge of Limited Tools",
+        date : "8th Febuary 2025",
+        description: "Hey there! I’m Bulus, a passionate web and app developer with big ideas and a love for building creative projects. From designing user-friendly interfaces to developing functional apps, I enjoy every step of the process. But there’s something I haven’t really shared until now—the tools I’m working with. Right now, I’m using an old, second-hand Dell laptop with a basic Core i3 processor. It’s slow, struggles with heavy tasks, and sometimes my phone even outperforms it. Whether it’s coding, designing, or running multiple applications, I often find myself battling lag and crashes. Despite these challenges, I’ve managed to complete several projects, But I know I can push my skills further and bring even bigger ideas to life with the right tools.",
+        link: "blogs/creativity-challenge.html",
+    },
     
     
 ];

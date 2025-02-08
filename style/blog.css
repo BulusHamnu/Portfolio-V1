@@ -8,9 +8,10 @@
 .blog-details h3 a {
     color: var(--textColor);
     text-decoration: underline;
+    transition: all 0.3s linear; 
 }
-.blog-details h3 a:hover {
-    color: var(--);
+.blog-details h3 a:hover,.action-link:hover {
+    color: var(--buttonhover);
 }
 
 .blog-details .title {
@@ -30,6 +31,11 @@
     margin-right: 0;
 }
 
+.action-link {
+    color: blue;
+    text-decoration: underline;
+    transition: all 0.3s linear; 
+}
 
 @media screen and (min-width: 768px) {
     .blog-details {
