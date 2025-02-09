@@ -9,14 +9,14 @@ export {projects,blogs}
         description: "This is my personal portfolio website, designed to showcase my skills, projects, and experience as a developer. It includes an 'About Me' section where I share details about my background, education, and journey as a developer. The site also features a Dynamic Blogs section, where I write about my thoughts and share knowledge, and a Dynamic Projects section that highlights the work I’ve done. With a fully responsive design, the website ensures a great user experience on any device. Feel free to explore the site, and if you have any suggestions or feedback on how I can improve, don’t hesitate to reach out!",
         technologies: ["HTML", "CSS","Javascript","Formspree API"],
         link: {
-            demoUrl: "https://bulus-dev.vercel.app/",
+            demoUrl: "https://bulusdev.vercel.app/",
             git_hubUrl: "https://github.com/BulusHamnu/Portfolio-V1.git"
         },
         latest : true,
     },
     {
         id : 2,
-        image: "Asserts/images/demy studio image.png",
+        image: "Asserts/images/demystudioIMG.png",
         title: "Demy's Studio",
         description: "Demy's Studio is a portfolio website for a photography studio to showcase its potential and display its work to the world. It features a responsive design built with Bootstrap's grid system and pre-built components. The website integrates with the Unsplash API to fetch high-quality images from various categories, such as products, events, and lifestyle. It also implements a pagination design to load and display more images as users scroll down.",
         technologies: ["HTML", "CSS", "JavaScript","Bootstrap","Unsplash API","Formspree API"],
