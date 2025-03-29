@@ -13,7 +13,7 @@
     border: .2rem solid var(--textColor);
     background-color: var(--primaryColor);
     border-radius: .5rem;
-    padding: .5rem .5rem 3rem .5rem;
+    padding: .5rem .5rem 1.5rem .5rem;
     margin: 0 .2rem;
     color: var(--textColor);
     transition: box-shadow 0.2s linear;
@@ -40,6 +40,7 @@
 }
 .project-cover img {
     width: 100%;
+    border: 2px solid var(--textColor);
 }
 .project-title {
     margin: .6rem 0;
