@@ -49,7 +49,7 @@ export {projects,blogs}
             git_hubUrl: "https://github.com/BulusHamnu/animeq-game.git"
         }
         ,
-        latest : true,
+        latest : false,
     },
     {
         id : 5,
@@ -73,6 +73,19 @@ export {projects,blogs}
         link: {
             demoUrl: "https://demitasks.vercel.app/",
             git_hubUrl: "https://github.com/BulusHamnu/Demi-Tasks.git"
+        }
+        ,
+        latest : true,
+    },
+    {
+        id : 7,
+        image: "Asserts/images/svg-projects-card.png",
+        title: "Svg-Projects-Card",
+        description: "Svg-Projects-Card is an API that queries GitHub repositories and generates beautiful SVG visualizations that can be embedded anywhere—on websites and, most importantly, in your GitHub README profile.I was inspired to create this after seeing a similar feature on DenverCoder1's GitHub profile, especially since I had just started learning backend development with Flask. I wanted something like that for my own profile, so I decided to build my own version.I also added a unique feature: the ability to include an imageUrl parameter, allowing users to add a project cover image to their cards.You can check the full documentation on how to use it on the docs page.",
+        technologies: ["HTML", "CSS", "JavaScript","Flask", "Flask_restful"],
+        link: {
+            demoUrl: "https://svg-projects-card.onrender.com/",
+            git_hubUrl: "https://github.com/BulusHamnu/readme-svg-projects-card.git"
         }
         ,
         latest : true,
