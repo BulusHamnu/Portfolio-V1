@@ -10,7 +10,7 @@ let allProjects = "";
 projects.forEach(project => {
     
     let projectDetails = `
-        <div class="project-card" data-projectid=${project.id}>
+        <div class="project-card fade-in" data-animationtype="animate" data-projectid=${project.id}>
             <div class="project-cover"><img src="${project.image}" alt="${project.title}"></div>
             <h3 class="project-title">${project.title}</h3>
             <p class="project-description">${project.description}</p>

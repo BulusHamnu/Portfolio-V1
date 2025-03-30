@@ -113,9 +113,23 @@ window.addEventListener("scroll", function () {
 });
 
 
+// intersaction observer for animation
 
+const observer2 = new IntersectionObserver( entries => {
+    entries.forEach( entry => {
+        if(entry.isIntersecting) {
+            const animation = entry.target.dataset.animationtype
+            entry.target.classList.add(animation)
+        } 
+    })
+}, {
+    threshold : 0.3,
+    rootMargin: "0px 1080px -30px 1080px"
+})
 
-
+document.querySelectorAll(".fade-in, .slide-left, .slide-from-right, .slide-from-left").forEach( element => {
+    observer2.observe(element)
+})
 
 
 

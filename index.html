@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="minified/index.min.css">
     <link rel="stylesheet" href="minified/project_section.min.css">
     <link rel="stylesheet" href="minified/blog_section.min.css">
+    <link rel="stylesheet" href="style/animation.css">
     
 </head>
 <body >
@@ -85,13 +86,13 @@
         <div class="over-lay"></div>
        <!-- Hero section -->
             <section class="hero-section" id="hero-section" >
-                <h1>Bulus Hamnu - Software Developer</h1>
-                <p class="intro-graph">Hi, I'm Bulus Hamnu, a software developer with a strong passion for backend and full-stack development. I have experience working with HTML, CSS, JavaScript, and Python, and I’m currently expanding my skills in React and Flask to build dynamic, scalable applications. I’m always eager to learn and improve. Beyond coding, I have a deep love for music, anime, anything with a .py, and staying at home. Feel free to reach out if you'd like to discuss potential collaborations or opportunities.</p>
+                <h1 class="fade-in" data-animationtype="animate">Bulus Hamnu - Software Developer</h1>
+                <p class="intro-graph fade-in" data-animationtype="animate">Hi, I'm Bulus Hamnu, a software developer with a strong passion for backend and full-stack development. I have experience working with HTML, CSS, JavaScript, and Python, and I’m currently expanding my skills in React and Flask to build dynamic, scalable applications. I’m always eager to learn and improve. Beyond coding, I have a deep love for music, anime, anything with a .py, and staying at home. Feel free to reach out if you'd like to discuss potential collaborations or opportunities.</p>
                 <div class="call-to-actions">
-                    <a href="#contact_me" class="button" role="button">contact me</a>
-                    <a target="_blank" href="Asserts/Bulus_Hamnu_Resume.pdf" class="button-transparent resume-btn" role="button">resume <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
+                    <a href="#contact_me" class="button fade-in" data-animationtype="animate" role="button">contact me</a>
+                    <a target="_blank" href="Asserts/Bulus_Hamnu_Resume.pdf" class="button-transparent resume-btn fade-in" data-animationtype="animate" role="button">resume <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
                 </div>
-                <ul class="social-links">
+                <ul class="social-links fade-in" data-animationtype="animate">
                     <li><a href="https://github.com/BulusHamnu" target="_blank" aria-label="My github profile link"><i class="fa-brands fa-github social-link svg-icon"></i></a></li>
                     <li><a href="https://x.com/bulushamnu?t=DruMHErbK2GRXdyNzD5pEw&s=09" target="_blank" aria-label="My twitter profile link"><i class="fa-brands fa-twitter  social-link svg-icon" ></i></a></li>
                     <li><a href="https://www.linkedin.com/in/bulus-hamnu-a2850a23b" target="_blank" aria-label="My linkedin profile link"><i class="fab fa-linkedin social-link svg-icon"></i></a></li>
@@ -119,7 +120,7 @@
 
                 <div class="skills-list" aria-label="">
 
-                    <div class="skill-card">
+                    <div class="skill-card slide-left" data-animationtype="animate2">
                         <div>
                             <h3>Front-end</h3>
                             <p>I build interactive and responsive user interfaces using HTML, CSS, JavaScript, and React.</p>
@@ -134,7 +135,7 @@
                             <!-- <li><img src="Asserts/Icons/react-native.png" alt=" React Native">React Native</li> -->
                         </ul>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card slide-left" data-animationtype="animate2">
                         <div>
                             <h3>Backend Development</h3>
                             <p>I create robust backend systems with Flask.py and python and integrate databases like MongoDB and Firebase.</p>
@@ -148,7 +149,7 @@
                             <li><img src="Asserts/Icons/kv.png" alt="Python">Python</li>
                         </ul>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card slide-left" data-animationtype="animate2">
                         <div>
                             <h3>Design</h3>
                             <p>I use Figma to craft intuitive, user-centered designs, applying basic design principles to ensure usability.</p>
@@ -158,7 +159,7 @@
                             <li><img src="Asserts/Icons/ui-ux.png" alt="UX-Ui Design">UI/UX Design</li>
                         </ul>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card slide-left" data-animationtype="animate2">
                         <div>
                             <h3>Additional Skills</h3>
                             <p>Alongside my core skills in front-end, back-end, I also bring a strong foundation in version control (Git), and other technologies.</p>
@@ -193,7 +194,7 @@
                 </div>
 
                 <div id="about-me-tab" class="about-me-tab tab-content" role="tabpanel" aria-labelledby="about-me">
-                    <div class="myself">
+                    <div class="myself slide-from-left" data-animationtype="animate3">
                         <p>my journey into programming started at the age of 13, driven by my deep interest in robotics. While I’m not currently involved in robotics, it laid the foundation for my programming skills. I am passionate about technology and its potential to change the world.</p>
                         <h4>Interest &#128161;</h4>
                         <p>Outside coding, I enjoy making music and watching anime.</p>
@@ -202,7 +203,7 @@
                         <h4>Goals &#127919;</h4>
                         <p>I aim to contribute to the global tech industry and become an influential developer.</p>
                     </div>
-                    <figure class="avatar"><img src="Asserts/images/myProfile.jpg" alt="Portrait of Bulus Hamnu"></figure>
+                    <figure class="avatar slide-from-right" data-animationtype="animate3"><img src="Asserts/images/myProfile.jpg" alt="Portrait of Bulus Hamnu"></figure>
                 </div>
 
                 <div class="education-tab tab-content tab-grid" role="tabpanel" id="education-tab" aria-labelledby="my-education">
@@ -246,7 +247,7 @@
                 <h2>Contact Me</h2>
                 <div class="contact-grid">
 
-                    <form method="POST" class="contact-form form-js" action="https://formspree.io/f/mrbgwjob" >
+                    <form method="POST" class="contact-form form-js fade-in" data-animationtype="animate" action="https://formspree.io/f/mrbgwjob" >
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required placeholder="Yourname..">
@@ -263,11 +264,11 @@
                     </form>
 
                     <div class="contact-links">
-                        <div class="email"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><a href="mailto:hamnubulus@gmail.com?subject=Inquiry&body=Hi, I have a question about your portfolio.">hamnubulus@gmail.com</a></div>
-                        <div class="phone"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="tel:+2349068556962">+234 9068 556 962</a></div>
-                        <div class="discord"><i class="fa-brands fa-discord "></i>
+                        <div class="email contact-link slide-from-right" data-animationtype="animate3"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><a href="mailto:hamnubulus@gmail.com?subject=Inquiry&body=Hi, I have a question about your portfolio.">hamnubulus@gmail.com</a></div>
+                        <div class="phone contact-link slide-from-right" data-animationtype="animate3"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="tel:+2349068556962">+234 9068 556 962</a></div>
+                        <div class="discord contact-link slide-from-right" data-animationtype="animate3"><i class="fa-brands fa-discord "></i>
                             <a href="#">Discord: @BulusHamnu</a></div>
-                        <div class="address"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><a href="">Yelwan lebura bauchi, Nigeria.</a></div>
+                        <div class="address contact-link slide-from-right" data-animationtype="animate3"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><a href="">Yelwan lebura bauchi, Nigeria.</a></div>
                         </div>
 
                 </div>
@@ -296,7 +297,7 @@
           <footer>
              <p>&copy;<span class="copyright-date">2025</span> Bulus Hamnu. Made with &#10084;</p>
 
-             <ul class="social-links">
+             <ul class="social-links fade-in">
                 <li><a href="https://github.com/BulusHamnu" target="_blank" aria-label="My github profile link"><i class="fa-brands fa-github social-link svg-icon"></i></a></li>
                 <li><a href="https://x.com/bulushamnu?t=DruMHErbK2GRXdyNzD5pEw&s=09" target="_blank" aria-label="My twitter profile link"><i class="fa-brands fa-twitter  social-link svg-icon" ></i></a></li>
                 <li><a href="https://www.linkedin.com/in/bulus-hamnu-a2850a23b" target="_blank" aria-label="My linkedin profile link"><i class="fab fa-linkedin social-link svg-icon"></i></a></li>
@@ -309,7 +310,7 @@
 
 
     
-    <script type="module" src="minified/main.min.js"></script>
     <script type="module" src="minified/index.min.js"></script>
+    <script type="module" src="minified/main.min.js"></script>
 </body>
 </html>

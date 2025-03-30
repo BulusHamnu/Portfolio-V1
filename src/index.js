@@ -31,7 +31,7 @@ function getProjects() {
         projects.forEach(project => {
             if (project.latest) {
                 let projectDetails = `
-                <div class="project-card" data-projectid=${project.id}>
+                <div class="project-card fade-in" data-animationtype="animate" data-projectid=${project.id}>
                     <div class="project-cover"><img src="${project.image}" alt="${project.title}"></div>
                     <h3 class="project-title">${project.title}</h3>
                     <p class="project-description">${project.description}</p>
@@ -66,7 +66,7 @@ function getBlogs() {
         let allBlogs = "";
         blogs.forEach( blog => {
             let blogPost = `
-                <article class="blog" >
+                <article class="blog fade-in" data-animationtype="animate">
                     <a href="${blog.link}"><h4 class="blog-title">${blog.title}.</h4></a>
                     <p class="blog-date">${blog.date}</p>
                     <p class="blog-content-preview">${blog.description}</p>

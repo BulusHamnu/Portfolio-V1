@@ -7,7 +7,7 @@ const blogListCont = document.querySelector(".blog-list")
 let allBlogs = "";
         blogs.forEach( blog => {
             let blogPost = `
-                <article class="blog" >
+                <article class="blog fade-in" data-animationtype="animate">
                     <a href="${blog.link}"><h4 class="blog-title">${blog.title}.</h4></a>
                     <p class="blog-date"><time datetime=${blog.date}>${blog.date}</time></p>
                     <p class="blog-content-preview">${blog.description}</p>
