@@ -40,6 +40,7 @@ body {
     height: 100vh;
     font-family: "Roboto", sans-serif;
     transition: background-color 0.2s ease, color 0.2s ease;
+    overflow-x: hidden;
 }
 body.theme-light {
     --primaryColor: #f7f7f7;       

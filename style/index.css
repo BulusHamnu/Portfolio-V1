@@ -120,13 +120,20 @@
     padding: .2rem;
 }
 .about-me-tab {
-    display: none;
+    display: grid;
     grid-template-columns: 1fr;
     gap: .5rem;
     justify-content: center;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out;
 }
 .about-me-tab.active {
-    display: grid;
+/*    display: grid;*/
+    height: max-content;
+    opacity: 1;
+    visibility: visible;
 }
 
 .about-me h4 {
@@ -137,7 +144,7 @@
 }
 .avatar img {
     filter: grayscale(1);
-    transition: all .3s linear;
+    transition: transform .3s linear;
 }
 .avatar img:hover {
     filter: grayscale(0);
@@ -183,7 +190,12 @@
 
 .education-tab,.experiences-tab  {
     margin: 1rem;
-    display: none;
+    display: grid;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear;
 }
 
 
@@ -208,12 +220,13 @@
     margin: 0 .2rem 0 0;
 }
 
-.experiences-tab.active {
-    display: grid;
+
+.experiences-tab.active , .education-tab.active{
+    height: max-content;
+    opacity: 1;
+    visibility: visible;
 }
-.education-tab.active {
-    display: grid;
-}
+ 
 
 /* Contact section */
 .contact-me {
