@@ -124,7 +124,7 @@ const observer2 = new IntersectionObserver( entries => {
     })
 }, {
     threshold : 0.3,
-    rootMargin: "0px 1080px -30px 1080px"
+    rootMargin: "0px 1080px 100px 1080px"
 })
 
 document.querySelectorAll(".fade-in, .slide-left, .slide-from-right, .slide-from-left").forEach( element => {
