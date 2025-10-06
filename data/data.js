@@ -16,7 +16,7 @@ export {projects,blogs}
     },
     {
         id : 2,
-        image: "https://svg-projects-card.onrender.com/api/bulushamnu/repos/readme-svg-projects-card?theme=light",
+        image: "Asserts/images/demi_tasks_cover.png",
         title: "Demi-Tasks Mananger",
         description: "Demi Tasks Manager is a powerful tool that helps you organize tasks, track progress, and analyze productivity. It allows you to create, edit, and delete tasks, add to-dos, attachments, and due dates, and categorize tasks for better organization. The dashboard provides an overview of tasks by status, while the integrated Vanilla Calendar helps with scheduling. Chart.js offers insights into task completion, and IndexedDB ensures large data storage, including files. Future updates will include reminders and notifications to enhance task management.",
         technologies: ["HTML", "CSS", "JavaScript","IndexDb", "Chart.js", "Vanilla Calendar"],

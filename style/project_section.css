@@ -47,11 +47,11 @@
 /* animation for cover image loading */
 @keyframes loading-image {
   0% {
-    filter: blur(6px);
+    filter: blur(4px);
     opacity: 0.3;
   }
   50% {
-    filter: blur(4px);
+    filter: blur(3px);
     opacity: 0.6;
   }
   65% {
@@ -71,6 +71,9 @@
   animation: loading-image 2s 1;
 }
 
+.project-cover-placeholder {
+    filter: blur(1px);
+}
 
 
 .project-title {
