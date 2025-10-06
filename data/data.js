@@ -16,7 +16,7 @@ export {projects,blogs}
     },
     {
         id : 2,
-        image: "Asserts/images/demi_tasks_cover.png",
+        image: "https://svg-projects-card.onrender.com/api/bulushamnu/repos/readme-svg-projects-card?theme=light",
         title: "Demi-Tasks Mananger",
         description: "Demi Tasks Manager is a powerful tool that helps you organize tasks, track progress, and analyze productivity. It allows you to create, edit, and delete tasks, add to-dos, attachments, and due dates, and categorize tasks for better organization. The dashboard provides an overview of tasks by status, while the integrated Vanilla Calendar helps with scheduling. Chart.js offers insights into task completion, and IndexedDB ensures large data storage, including files. Future updates will include reminders and notifications to enhance task management.",
         technologies: ["HTML", "CSS", "JavaScript","IndexDb", "Chart.js", "Vanilla Calendar"],
@@ -29,12 +29,12 @@ export {projects,blogs}
     },
     {
         id : 3,
-        image: "Asserts/images/svg-projects-card.png",
+        image: "https://svg-projects-card.onrender.com/api/bulushamnu/repos/readme-svg-projects-card?theme=dark",
         title: "Svg-Projects-Card",
         description: "Svg-Projects-Card is an API that queries GitHub repositories and generates beautiful SVG visualizations that can be embedded anywhere—on websites and, most importantly, in your GitHub README profile.I was inspired to create this after seeing a similar feature on DenverCoder1's GitHub profile, especially since I had just started learning backend development with Flask. I wanted something like that for my own profile, so I decided to build my own version.I also added a unique feature: the ability to include an imageUrl parameter, allowing users to add a project cover image to their cards.You can check the full documentation on how to use it on the docs page.",
         technologies: ["HTML", "CSS", "JavaScript","Flask", "Flask_restful"],
         link: {
-            demoUrl: "https://svg-projects-card.onrender.com/",
+            demoUrl: "https://github.com/BulusHamnu/readme-svg-projects-card",
             git_hubUrl: "https://github.com/BulusHamnu/readme-svg-projects-card.git"
         }
         ,
@@ -63,7 +63,7 @@ export {projects,blogs}
             demoUrl: "https://bulushamnu.github.io/demys-studio/",
             git_hubUrl: "https://github.com/BulusHamnu/demys-studio.git"
         },
-        latest : true,
+        latest : false,
     },
     {
         id : 6,
