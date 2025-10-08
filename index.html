@@ -14,7 +14,8 @@
 />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="minified/main.min.css">
-    <link rel="stylesheet" href="minified/index.min.css">
+    <!-- <link rel="stylesheet" href="minified/index.min.css"> -->
+    <link rel="stylesheet" href="style/index.css">
     <!-- <link rel="stylesheet" href="minified/project_section.min.css"> -->
     <link rel="stylesheet" href="style/project_section.css">
     <link rel="stylesheet" href="minified/blog_section.min.css">
@@ -127,11 +128,11 @@
                             <p>I build interactive and responsive user interfaces using HTML, CSS, JavaScript, and React.</p>
                         </div>
                         <ul>
-                            <li><img src="Asserts/Icons/js.png" alt="JavaScript">JavaScript</li>
-                            <li><img src="Asserts/Icons/react_js.png" alt="React">React</li>
                             <!-- <li> <img src="Asserts/Icons/typescript.png" alt="TypeScript">TypeScript</li> -->
                             <li><img src="Asserts/Icons/html-5.png" alt="HTML Icon"> HTML</li>
                             <li><img src="Asserts/Icons/css.png" alt="CSS Icon"> CSS</li>
+                            <li><img src="Asserts/Icons/js.png" alt="JavaScript">JavaScript</li>
+                             <li><img src="Asserts/Icons/react_js.png" alt="React">React</li>
                             <li><img src="Asserts/Icons/tailwind-css2.png" alt="Tail-Wind">Tail-Wind</li>
                             <!-- <li><img src="Asserts/Icons/react-native.png" alt=" React Native">React Native</li> -->
                         </ul>
@@ -139,15 +140,15 @@
                     <div class="skill-card slide-left" data-animationtype="animate2">
                         <div>
                             <h3>Backend Development</h3>
-                            <p>I create robust backend systems with Flask.py and python and integrate databases like MongoDB and Firebase.</p>
+                            <p>I create robust backend systems with NodeJs, Flask.py and integrate databases like MongoDB and PostgreSQL.</p>
                         </div>
                         <ul>
                             <li><img src="Asserts/Icons/nodejs.png" alt="Node.js">Node.js</li>
                             <li><img src="Asserts/Icons/python_flask.svg" alt="Python">Flask.py</li>
-                            <!-- <li><img src="Asserts/Icons/mongodb (1).png" alt="Mongo DB">MongoDB</li> -->
-                            <li><img src="Asserts/Icons/firebase.png" alt="Firebase">Firebase</li>
-                            <li><img src="Asserts/Icons/api.png" alt="API Intergration">API</li>
-                            <li><img src="Asserts/Icons/kv.png" alt="Python">Python</li>
+                            <li><img src="Asserts/Icons/mongodb (1).png" alt="Mongo DB">MongoDB</li>
+                            <li><img src="Asserts/Icons/postgresql.jpeg" alt="PostgreSQL">PostgreSQL</li>
+                            <!-- <li><img src="Asserts/Icons/api.png" alt="API Intergration">API</li> -->
+                            
                         </ul>
                     </div>
                     <div class="skill-card slide-left" data-animationtype="animate2">
@@ -167,7 +168,8 @@
                         </div>
                         <ul>
                             <li><img src="Asserts/Icons/github-logo.png" alt="Github">Git/GitHub</li>
-                            <!-- <li><img src="Asserts/Icons/linux.png" alt="Linux">Linux</li> -->
+                            <li><img src="Asserts/Icons/linux.png" alt="Linux">Linux</li>
+                            <li><img src="Asserts/Icons/kv.png" alt="Python">Python</li>
                             <li><img src="Asserts/Icons/bootstrap.png" alt="Bootsrap">BootStrap</li>
                         </ul>
                     </div>
@@ -196,21 +198,23 @@
 
                 <div id="about-me-tab" class="about-me-tab tab-content" role="tabpanel" aria-labelledby="about-me">
                     <div style="transition-delay: 0.4s;" class="myself slide-left" data-animationtype="animate2">
-                        <p>my journey into programming started at the age of 13, driven by my deep interest in robotics. While I’m not currently involved in robotics, it laid the foundation for my programming skills. I am passionate about technology and its potential to change the world.</p>
+                        <p>My journey into programming started at the age of 13, driven by a deep fascination with robotics. While I’m not currently involved in robotics, it laid the foundation for my programming skills and my curiosity about how technology works. Over the years, I’ve grown into a versatile developer who enjoys building both frontend and backend systems and exploring how computers connect the world.</p>
                         <h4>Interest &#128161;</h4>
                         <p>Outside coding, I enjoy making music and watching anime.</p>
                         <h4>Passion &#128293;</h4>
-                        <p>My passion lies in blending programming and creativity to build impactful solutions. Whether through developing software, designing intuitive websites, or exploring music production, I aim to use technology to innovate and inspire.</p>
+                        <p>I’m passionate about understanding technology beyond just writing code — I love exploring how systems, networks, and compilers work under the hood. My goal is to use programming and creativity to build tools that make a real impact and inspire others through innovation.
+                        </p>
                         <h4>Goals &#127919;</h4>
                         <p>I aim to contribute to the global tech industry and become an influential developer.</p>
+                        <p><b>I use Arch, btw.</b></p>
                     </div>
                     <figure  class="avatar slide-from-right" data-animationtype="animate3"><img src="Asserts/images/myProfile.jpeg" alt="Portrait of Bulus Hamnu"></figure>
                 </div>
 
                 <div class="education-tab tab-content tab-grid" role="tabpanel" id="education-tab" aria-labelledby="my-education">
                     <div class="type">
-                        <h3>2015 - 2021</h3>
-                        <h3>Junior to Senior High School</h3>
+                        <h3>2017 - 2021</h3>
+                        <h3>Senior High School</h3>
                         <p><span class="marker"></span> Police secondary school.</p>
                         
                     </div>
@@ -232,10 +236,17 @@
 
                 <div class="experiences-tab tab-content tab-grid " role="tabpanel" aria-labelledby="my-expriences" id="exprienece-tab">
                     <div class="type">
-                        <h4>2021 - till date </h4>
+                        <h4>2021 - Present</h4>
                         <h3>Freelancing</h3>
-                        <p><span class="marker"></span>Freelancer</p>
-                        <p>I have worked on various projects and help alot of folks in design and building all kind of website and applications.</p>
+                        <p><span class="marker"></span>Freelance Developer</p>
+                        <p>I’ve also worked independently as a freelance developer, helping clients design and build a variety of websites and web applications tailored to their needs.</p>
+                    </div>
+                    <div class="type">
+                        <h4>2023 - Present</h4>
+                        <h3>Web developer</h3>
+                        <p><span class="marker"></span>Exponential Enlightenment (Remote)</p>
+                        <p>I build and maintain websites for Exponential Enlightenment and its founder, David Prorok. My work includes integrating Lovable with Node.js, setting up Vercel serverless functions, and managing Stripe payments. I’ve contributed to several company projects, including Exponential Enlightenment, True Love, and Prompt to Page..</p>
+                        
                     </div>
 
 
@@ -266,10 +277,11 @@
 
                     <div class="contact-links">
                         <div class="email contact-link fade-in" data-animationtype="animate"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg><a href="mailto:hamnubulus@gmail.com?subject=Inquiry&body=Hi, I have a question about your portfolio.">hamnubulus@gmail.com</a></div>
-                        <div class="phone contact-link fade-in" data-animationtype="animate"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="tel:+2349068556962">+234 9068 556 962</a></div>
+                        <div class="phone contact-link fade-in" data-animationtype="animate"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg><a href="tel:+2349068556962">+234 7059 252 490</a></div>
                         <div class="discord contact-link fade-in" data-animationtype="animate"><i class="fa-brands fa-discord "></i>
                             <a href="#">Discord: @BulusHamnu</a></div>
-                        <div class="address contact-link fade-in" data-animationtype="animate"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><a href="">Yelwan lebura bauchi, Nigeria.</a></div>
+                            
+                        <div class="address contact-link fade-in" data-animationtype="animate"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg><a href="">Planet Mars</a></div>
                         </div>
 
                 </div>
@@ -296,7 +308,7 @@
 
          <!-- Footer Section -->
           <footer>
-             <p class="slide-left" data-animationtype="animate2">&copy;<span class="copyright-date">2025</span> Bulus Hamnu. Made with &#10084;</p>
+             <p class="slide-left" data-animationtype="animate2">&copy;<span class="copyright-date">2025</span> Bulus Hamnu. Made with &#10084;. Jesus is lord &#x1F4FF;</p>
              <ul class="social-links fade-in" data-animationtype="animate">
                 <li><a href="https://github.com/BulusHamnu" target="_blank" aria-label="My github profile link"><i class="fa-brands fa-github social-link svg-icon"></i></a></li>
                 <li><a href="https://x.com/bulushamnu?t=DruMHErbK2GRXdyNzD5pEw&s=09" target="_blank" aria-label="My twitter profile link"><i class="fa-brands fa-twitter  social-link svg-icon" ></i></a></li>
@@ -304,7 +316,7 @@
                 <li><a href="https://www.youtube.com/channel/UCkFZr0w1HbX4MPN6TjAJEuQ" target="_blank" aria-label="My youtube profile link"><i class="fa-brands fa-youtube social-link svg-icon" ></i></a></li>
             </ul>
           </footer>
- 
+          <div class="footer-alignment"></div>
           <!-- The End :) -->
     </div>
 
