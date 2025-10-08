@@ -14,8 +14,8 @@ if (projects.length === 0) {
     let projectDetails = `
         <div class="project-card fade-in" data-animationtype="animate" data-projectid=${project.id}>
             <div class="project-cover">
-                <img class="project-cover-placeholder" src="Asserts/images/placeholder-image.jpeg" alt="${project.title}">
-                <img class="real-project-cover" src="${project.image}" alt="${project.title}">
+                <img class="image-cover-placeholder" src="Asserts/images/placeholder-image.jpeg" alt="${project.title}">
+                <img class="real-project-cover loaded" src="${project.image}" alt="${project.title}">
             </div>
             <h3 class="project-title">${project.title}</h3>
             <p class="project-description">${project.description}</p>
@@ -38,13 +38,12 @@ if (projects.length === 0) {
   // listen for cover images load and hide the place holders
   document.querySelectorAll(".project-cover").forEach((projectCover) => {
     const placeholderCoverImage = projectCover.querySelector(
-      ".project-cover-placeholder"
+      ".image-cover-placeholder"
     );
     const realCoverImage = projectCover.querySelector(".real-project-cover");
 
     // event listener
     realCoverImage.addEventListener("load", () => {
-      realCoverImage.classList.add("loaded");
       placeholderCoverImage.style.display = "none";
     });
   });

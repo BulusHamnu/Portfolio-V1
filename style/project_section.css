@@ -44,37 +44,6 @@
   border: 2px solid var(--textColor);
 }
 
-/* animation for cover image loading */
-@keyframes loading-image {
-  0% {
-    filter: blur(4px);
-    opacity: 0.3;
-  }
-  50% {
-    filter: blur(3px);
-    opacity: 0.6;
-  }
-  65% {
-    filter: blur(2px);
-    opacity: 0.8;
-  }
-  80% {
-    filter: blur(1px);
-    opacity: 0.9;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-.loaded {
-  animation: loading-image 2s 1;
-}
-
-.project-cover-placeholder {
-    filter: blur(1px);
-}
-
 
 .project-title {
   margin: 0.6rem 0;
