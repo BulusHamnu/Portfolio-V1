@@ -17,7 +17,7 @@ document.querySelector(".copyright-date").innerText = new Date()
 
 /* Hide project section if there is no projects */
 if (projects.length === 0) {
-    document.querySelector(".projects-section").style.display = "none";
+  document.querySelector(".projects-section").style.display = "none";
 }
 
 function getBlogs() {
@@ -128,7 +128,7 @@ let observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: threshold }
+  { threshold: threshold },
 );
 
 document

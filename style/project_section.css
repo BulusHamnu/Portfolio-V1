@@ -36,14 +36,14 @@
 }
 
 .project-card:hover {
-  box-shadow: 0.1rem 0.1rem 0.7rem var(--buttonColor),
+  box-shadow:
+    0.1rem 0.1rem 0.7rem var(--buttonColor),
     -0.1rem -0.1rem 0.7rem var(--buttonColor);
 }
 .project-cover img {
   width: 100%;
   border: 2px solid var(--textColor);
 }
-
 
 .project-title {
   margin: 0.6rem 0;

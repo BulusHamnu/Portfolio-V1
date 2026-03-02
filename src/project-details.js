@@ -40,15 +40,15 @@ if (projectId) {
       }
 
       // listen for cover images load and hide the place holders
-      const placeholderCoverImage = document.querySelector(".image-cover-placeholder");
+      const placeholderCoverImage = document.querySelector(
+        ".image-cover-placeholder",
+      );
       const realCoverImage = document.querySelector(".real-project-image");
 
       // event listener
       realCoverImage.addEventListener("load", () => {
         placeholderCoverImage.style.display = "none";
       });
-
-      
     }
   });
 } else {
