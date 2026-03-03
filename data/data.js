@@ -7,7 +7,7 @@ const projects = [
     image: "asserts/images/demi_tasks_cover.png",
     title: "Demi-Tasks Mananger",
     description:
-      "Demi Tasks Manager is a powerful tool that helps you organize tasks, track progress, and analyze productivity. It allows you to create, edit, and delete tasks, add to-dos, attachments, and due dates, and categorize tasks for better organization. The dashboard provides an overview of tasks by status, while the integrated Vanilla Calendar helps with scheduling. Chart.js offers insights into task completion, and IndexedDB ensures large data storage, including files. Future updates will include reminders and notifications to enhance task management.",
+      "Demi Tasks Manager is a tool that helps you organize tasks, track progress, and analyze productivity. It allows you to create, edit, and delete tasks, add to-dos, attachments, and due dates, and categorize tasks for better organization. The dashboard provides an overview of tasks by status, while the integrated Vanilla Calendar helps with scheduling. Chart.js offers insights into task completion, and IndexedDB ensures large data storage, including files. Future updates will include reminders and notifications to enhance task management.",
     technologies: [
       "HTML",
       "CSS",
@@ -38,6 +38,19 @@ const projects = [
   },
   {
     id: 3,
+    image: "asserts/images/exponential-en-cover-image.png",
+    title: "Exponential Enlightenment",
+    description:
+      "Exponential Enlightenment is a portfolio and consulting website built for David Prorok to support and promote his coaching sessions. The platform showcases his courses, the monthly Full Moon Program designed to guide individuals through meditation toward inner peace and clarity, Boodi.AI, and a curated collection of transformational resources for those pursuing personal growth and enlightenment. The website is fully responsive and features four customizable themes, smooth scroll-based animations, and an integrated contact form for seamless communication.",
+    technologies: ["HTML", "CSS", "JavaScript", "FormSpree API"],
+    link: {
+      demoUrl: "https://exponentialenlightenment.vercel.app/",
+      git_hubUrl: "https://github.com/BulusHamnu/exponential-enlightenment.git",
+    },
+    latest: true,
+  },
+  {
+    id: 4,
     image: "asserts/images/bulus_dev_cover.png",
     title: "Bulus-dev portfolio V1",
     description:
@@ -50,7 +63,7 @@ const projects = [
     latest: true,
   },
   {
-    id: 4,
+    id: 5,
     image: "asserts/images/fewercharacter.png",
     title: "FewerCharacters",
     description:
@@ -63,7 +76,7 @@ const projects = [
     latest: true,
   },
   {
-    id: 5,
+    id: 6,
     image: "asserts/images/demystudioIMG.png",
     title: "Demy's Studio",
     description:
@@ -82,19 +95,19 @@ const projects = [
     },
     latest: true,
   },
-  {
-    id: 6,
-    image: "asserts/images/yo_demy_cover.png",
-    title: "Yo Demy Music",
-    description:
-      "Yo Demy Music is a personal website project I built for myself because I occasionally create music. Although I don't actively use it, I developed the site as part of my portfolio and to test my web development skills. The site features a home page, a music page, and a videos page. It also integrates the YouTube API to fetch artist videos from YouTube and embed them on the videos page. Additionally, there is Formspree API integration to handle form submissions and send them directly to the owner's email.",
-    technologies: ["HTML", "CSS", "JavaScript", "YouTube API", "FormSpree API"],
-    link: {
-      demoUrl: "https://yodemymusic.vercel.app/",
-      git_hubUrl: "https://github.com/BulusHamnu/yodemy-music.git",
-    },
-    latest: true,
-  },
+  // {
+  //   id: 7,
+  //   image: "asserts/images/yo_demy_cover.png",
+  //   title: "Yo Demy Music",
+  //   description:
+  //     "Yo Demy Music is a personal website project I built for myself because I occasionally create music. Although I don't actively use it, I developed the site as part of my portfolio and to test my web development skills. The site features a home page, a music page, and a videos page. It also integrates the YouTube API to fetch artist videos from YouTube and embed them on the videos page. Additionally, there is Formspree API integration to handle form submissions and send them directly to the owner's email.",
+  //   technologies: ["HTML", "CSS", "JavaScript", "YouTube API", "FormSpree API"],
+  //   link: {
+  //     demoUrl: "https://yodemymusic.vercel.app/",
+  //     git_hubUrl: "https://github.com/BulusHamnu/yodemy-music.git",
+  //   },
+  //   latest: false,
+  // },
 ];
 
 const blogs = [
