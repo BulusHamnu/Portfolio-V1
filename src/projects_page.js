@@ -1,5 +1,5 @@
 /* Variable */
-import { projects } from "../data/data.js";
+import projects from "../data/projects.js";
 const projectListCont = document.querySelector(".project-list");
 const filename = window.location.pathname.slice(1).split(".")[0];
 

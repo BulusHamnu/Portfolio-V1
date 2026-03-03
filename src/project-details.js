@@ -1,5 +1,5 @@
 /* Variable */
-import { projects } from "../data/data.js";
+import projects from "../data/projects.js";
 
 const projectContainer = document.querySelector(".project-details");
 

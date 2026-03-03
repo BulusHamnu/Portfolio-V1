@@ -1,5 +1,5 @@
 /* Variable */
-import { blogs } from "../data/data.js";
+import blogs from "../data/blogs";
 const blogListCont = document.querySelector(".blog-list");
 
 let allBlogs = "";

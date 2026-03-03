@@ -1,5 +1,6 @@
 /* Variables */
-import { projects, blogs } from "../data/data.js";
+import projects from "../data/projects.js";
+import blogs from "../data/blogs.js";
 const menuBtn = document.querySelector(".menu-btn-cont");
 const themeSwitch = document.querySelectorAll(".theme-switch");
 const sideNavBar = document.querySelector(".side-navBar");

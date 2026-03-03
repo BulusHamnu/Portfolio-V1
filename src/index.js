@@ -1,5 +1,6 @@
 /* Variable */
-import { projects, blogs } from "../data/data.js";
+import projects from "../data/projects.js";
+import blogs from "../data/blogs.js";
 const contactForm = document.querySelector(".form-js");
 const closeModal = document.querySelector(".close-modal");
 const contactModal = document.querySelector(".contact-modal");
