@@ -9,40 +9,35 @@ const sliderCont = document.querySelector(".skills-list");
 const projectListCont = document.querySelector(".project-list");
 const blogListCont = document.querySelector(".blog-list");
 
-/* Set display about me tab and set the copyright date */
-document.querySelector(".about-me-tab").classList.toggle("active");
+/* Display the updated copyright date */
 document.querySelector(".copyright-date").innerText = new Date()
   .getFullYear()
   .toString();
 
-/* Hide project section if there is no projects */
-if (projects.length === 0) {
+/* Hide Blogs and Projects sections in no data */
+if (!projects?.length) {
   document.querySelector(".projects-section").style.display = "none";
 }
 
-function getBlogs() {
-  if (blogs.length === 0) {
-    document.querySelector(".blog-section").style.display = "none";
-  } else {
-    let allBlogs = "";
-    blogs.forEach((blog) => {
-      let blogPost = `
-                <article class="blog fade-in" data-animationtype="animate">
-                    <a href="${blog.link}"><h4 class="blog-title">${blog.title}.</h4></a>
-                    <p class="blog-date">${blog.date}</p>
-                    <p class="blog-content-preview">${blog.description}</p>
-                    <a href="${blog.link}" class="button">Read More..</a>
-                </article>
-            
-            `;
-      allBlogs += blogPost;
-    });
+if (!blogs?.length) {
+  document.querySelector(".blog-section").style.display = "none";
+} else {
+  let allBlogs = "";
+  blogs.forEach((blog) => {
+    let blogPost = `
+              <article class="blog fade-in" data-animationtype="animate">
+                  <a href="${blog.link}"><h4 class="blog-title">${blog.title}.</h4></a>
+                  <p class="blog-date">${blog.date}</p>
+                  <p class="blog-content-preview">${blog.description}</p>
+                  <a href="${blog.link}" class="button">Read More..</a>
+              </article>
+          
+          `;
+    allBlogs += blogPost;
+  });
 
-    blogListCont.innerHTML = allBlogs;
-  }
+  blogListCont.innerHTML = allBlogs;
 }
-
-getBlogs();
 
 /* Form Handling */
 contactForm.addEventListener("submit", (event) => {
@@ -83,13 +78,14 @@ closeModal.addEventListener("click", function () {
   contactModal.setAttribute("aria-hidden", "true");
 });
 
-/* About me tab function */
+/* About me tab functionality */
 tabButtons.forEach((tab) => {
   tab.addEventListener("click", function () {
     tabButtons.forEach((tab) => {
       tab.setAttribute("aria-selected", "false");
       tab.classList.remove("active");
     });
+
     tab.classList.add("active");
     tab.setAttribute("aria-selected", "true");
 
@@ -101,10 +97,10 @@ tabButtons.forEach((tab) => {
   });
 });
 
-/* hightlight section a link when section is on screen */
+/* This hightlight section link when section is on screen */
 let threshold;
 if (window.innerWidth <= 768) {
-  //Viewing on mobile...
+  // For mobile..
   threshold = 0.3;
 } else {
   threshold = 0.4;
@@ -117,6 +113,7 @@ let observer = new IntersectionObserver(
         document.querySelectorAll("nav a").forEach((link) => {
           link.classList.remove("active");
         });
+
         document.querySelectorAll("nav a").forEach((link) => {
           if (
             link.getAttribute("href") ===
@@ -128,7 +125,7 @@ let observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: threshold },
+  { threshold },
 );
 
 document

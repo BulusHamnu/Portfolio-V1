@@ -19,20 +19,20 @@ if (body.classList.contains("theme-light")) {
   });
 }
 
-/* Check if blogs and projects are avaible else it hide their respective links */
-if (blogs.length === 0 || blogs === undefined) {
+/* Visitors should not see Blogs or Projects page links in navbar if data are not available. */
+if (!blogs?.length) {
   document.querySelectorAll("nav a").forEach((link) => {
     if (link.innerText === "BLOGS") link.style.display = "none";
   });
 }
 
-if (projects.length === 0 || blogs === undefined) {
+if (!projects?.length) {
   document.querySelectorAll("nav a").forEach((link) => {
     if (link.innerText == "PROJECTS") link.style.display = "none";
   });
 }
 
-/* Event listeners */
+/* Event handlers */
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
   sideNavBar.classList.toggle("active");
@@ -40,7 +40,6 @@ menuBtn.addEventListener("click", function () {
   header.classList.toggle("active");
 
   if (menuBtn.classList.contains("active")) {
-    // menuBtn.setAttribute("aria-hidden", "true");
     menuBtn.setAttribute("aria-expanded", "true");
     sideNavBar.setAttribute("aria-hidden", "false");
 
@@ -56,7 +55,7 @@ menuBtn.addEventListener("click", function () {
       link.setAttribute("tabindex", "-1");
     });
 
-    sideNavBar.querySelector(".theme-switch").setAttribute("tabindex", "-1 ");
+    sideNavBar.querySelector(".theme-switch").setAttribute("tabindex", "-1");
   }
 });
 
@@ -93,8 +92,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// intersaction observer for animation
-
+/* Intersaction observer for animation */
 const observer2 = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

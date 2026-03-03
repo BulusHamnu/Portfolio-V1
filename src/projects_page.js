@@ -5,18 +5,20 @@ const filename = window.location.pathname.slice(1).split(".")[0];
 
 /* Display All projects */
 let allProjects = "";
-if (projects.length === 0) {
+if (!projects?.length) {
   projectListCont.classList.remove("grid-container");
   projectListCont.innerHTML = `<h1>No Project Yet.</h1>`;
+  document.querySelector(".view-all-projects").style.display = "none";
 } else {
   projects.forEach((project) => {
     if (filename === "index" && project.latest === false) return;
     let projectDetails = `
         <div class="project-card fade-in" data-animationtype="animate" data-projectid=${project.id}>
             <div class="project-cover">
-                <img class="image-cover-placeholder" src="asserts/images/placeholder-image.jpeg" alt="${project.title}">
-                <img class="real-project-cover loaded" src="${project.image}" alt="${project.title}">
+                <img class="project-cover-image-placeholder" src="asserts/images/placeholder-image.jpeg" alt="${project.title}">
+                <img class="real-project-cover-image loaded" src="${project.image}" alt="${project.title}">
             </div>
+
             <h3 class="project-title">${project.title}</h3>
             <p class="project-description">${project.description}</p>
         </div>
@@ -28,6 +30,7 @@ if (projects.length === 0) {
 
   projectListCont.innerHTML = allProjects;
 
+  // We can only add event handler when they project cards are all rendered.
   document.querySelectorAll(".project-card").forEach((projectCard) => {
     projectCard.addEventListener("click", (event) => {
       let id = projectCard.dataset.projectid;
@@ -35,14 +38,14 @@ if (projects.length === 0) {
     });
   });
 
-  // listen for cover images load and hide the place holders
   document.querySelectorAll(".project-cover").forEach((projectCover) => {
     const placeholderCoverImage = projectCover.querySelector(
-      ".image-cover-placeholder",
+      ".project-cover-image-placeholder",
     );
-    const realCoverImage = projectCover.querySelector(".real-project-cover");
 
-    // event listener
+    const realCoverImage = projectCover.querySelector(
+      ".real-project-cover-image",
+    );
     realCoverImage.addEventListener("load", () => {
       placeholderCoverImage.style.display = "none";
     });
