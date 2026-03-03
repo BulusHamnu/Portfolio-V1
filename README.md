@@ -16,7 +16,7 @@ My portfolio contains all the information you need to know about me, including m
 
 - **Frontend:** For this project, I used only HTML, CSS, and JavaScript.
   As the name suggests, this is Version 1. I'm looking forward to building upon this by adding more features and improving the design.
-- **Deployment:** Hosted on [Vercel](https://your-vercel-link.vercel.app)
+- **Deployment:** Hosted on Vercel
 
 ---
 
